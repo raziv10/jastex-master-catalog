@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Display</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+        .product-item {
+            width: 100%; /* Full width within the container */
+            max-width: 800px; /* Adjusted maximum width */
+            margin: auto; /* Centering the card horizontally */
+            border: 1px solid #dee2e6;
+            border-radius: 0.25rem;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: row; /* Align side by side */
+            align-items: flex-start; /* Align items to the top of the container */
+        }
+        .image-container {
+            flex: 1; /* Allows image container to grow */
+            max-width: 300px; /* Limit image width */
+            align-self: start; /* Align the top of the image container to the top of the product-item */
+        }
+        .text-container {
+            flex: 2; /* Allows text container to take twice the space of the image container */
+            padding-left: 20px; /* Spacing between image and text sections */
+        }
+        .product-item img {
+            width: 100%; /* Make image full width of the container */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .product-name {
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 5px;
+            font-size: 1.0rem;
+        }
+        .product-price {
+            text-align: left;
+            font-size: 1.0rem;
+            color: #555;
+        }
+        .nav-tabs {
+        width: 100%;        /* Set width to 80% of its parent container */
+        margin-left: auto;  /* Auto margins for centering */
+        margin-right: auto; /* Auto margins for centering */
+    }
+    .tab-content {
+        margin-top: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 0.25rem;
+      
+        margin-left: auto;  /* Auto margins for centering */
+        margin-right: auto; /* Auto margins for centering */
+    }
+    .col {
+        padding: 10px;
+        flex: 1; /* Adjust the flex basis as needed */
+    }
+    .col h5 {
+        margin-bottom: 10px;
+    }
+    .col div {
+        display: flex;
+        align-items: center; /* Align checkboxes and text vertically */
+        white-space: nowrap; /* Keep text on one line */
+        overflow: hidden; /* Hide text that overflows */
+        text-overflow: ellipsis; /* Show ellipsis if text overflows */
+        margin-bottom: 5px;
+    }
+    .col input[type="checkbox"] {
+        margin-right: 10px; /* Space between checkbox and text */
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-1">Jastex Products Catalog</h1>
+        <div class="product-container">
+
+            <form action="/submit" method="post">
+                {% if message %}
+                    <p><strong>{{ message }}</strong></p>
+                {% else %}
+                    {% for item in items %}
+                        <div class="product-item">
+                            <div class="image-container">
+                                <img src="{{ item.Images }}" alt="{{ item.Name }}" class="img-fluid">
+                            </div>
+                            
+                            <div class="text-container">
+                                <h2 class="product-name">SKU:<b>{{ item.SKU }}</b></h2>
+                                <input type="hidden" name="item_checks" value="{{ item.SKU }}">
+                                <h2 class="product-name">{{ item.Name }}</h2>
+                                <p class="product-name">Vendor: <b>{{ item.supplier }}</b></p>
+                                <p class="product-name">Vendor Category: <b>{{ item.Categories }}</b></p>
+                                <div class="d-flex align-items-center">
+                                    <!-- Retail Price -->
+                                    <p class="product-price mb-0 me-3">Retail Price: <b>{{ item.Regular_price }}</b></p>
+                                    
+                                    <!-- Change Price Checkbox -->
+                                    <div>
+                                        <input type="checkbox" name="item_checks" value="Price Change" class="me-2">Change Price?
+                                    </div>
+                                </div>
+                                <hr>
+
+                                <div class="mt-2">
+                                    <label>Select Gender:</label>
+                                    <div class="d-flex align-items-center">
+                                        <div class="form-check me-3">
+                                            <input name="item_checks" type="radio" class="form-check-input" name="gender_{{ loop.index }}" value="Gender > Men" id="men_{{ loop.index }}">
+                                            <label class="form-check-label" for="men_{{ loop.index }}">Men</label>
+                                        </div>
+                                        <div class="form-check me-3">
+                                            <input name="item_checks" type="radio" class="form-check-input" name="gender_{{ loop.index }}" value="Gender > Ladies" id="ladies_{{ loop.index }}">
+                                            <label class="form-check-label" for="ladies_{{ loop.index }}">Ladies</label>
+                                        </div>
+                                        <div class="form-check me-3">
+                                            <input name="item_checks" type="radio" class="form-check-input" name="gender_{{ loop.index }}" value="Gender > Youth" id="youth_{{ loop.index }}">
+                                            <label class="form-check-label" for="youth_{{ loop.index }}">Youth</label>
+                                        </div>
+                                        <div class="form-check me-3">
+                                            <input name="item_checks" type="radio" class="form-check-input" name="gender_{{ loop.index }}" value="Gender > Unisex" id="unisex_{{ loop.index }}">
+                                            <label class="form-check-label" for="unisex_{{ loop.index }}">Unisex</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-2">
+                                    <!-- Other Category Section -->
+                                    <div class="mb-2">
+                                        <!-- Label on the first line -->
+                                        <label for="other_category" class="form-label">Other Category:</label>
+                                    </div>
+                                    <div>
+                                        <!-- Input field on the second line -->
+                                        <input type="text" id="other_category" name="other_category" class="form-control" placeholder="Enter category if not present in the list">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+             
+          
+        </div>
+        <div class="mt-6 col-24 d-flex justify-content-end" style="padding-right: 250px;">
+            <button type="submit" class="btn btn-primary">Next</button>
+        </div>
+    </div>
+    <div class="container">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <button class="nav-link active" id="uniforms-tab" data-bs-toggle="tab" data-bs-target="#uniformsContent" type="button" role="tab" aria-controls="uniformsContent" aria-selected="true">
+                    Restaurant and Food Service
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" id="automotive-tab" data-bs-toggle="tab" data-bs-target="#automotiveContent" type="button" role="tab" aria-controls="automotiveContent" aria-selected="false">
+                    Automotive and Transportation
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" id="healthcare-tab" data-bs-toggle="tab" data-bs-target="#healthcareContent" type="button" role="tab" aria-controls="healthcareContent" aria-selected="false">
+                    Healthcare and Hospital
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" id="hotel-tab" data-bs-toggle="tab" data-bs-target="#hotelContent" type="button" role="tab" aria-controls="hotelContent" aria-selected="false">
+                    Hotel and Casino
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" id="security-tab" data-bs-toggle="tab" data-bs-target="#securityContent" type="button" role="tab" aria-controls="securityContent" aria-selected="false">
+                    Security and Government Institutions
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" id="school-tab" data-bs-toggle="tab" data-bs-target="#schoolContent" type="button" role="tab" aria-controls="schoolContent" aria-selected="false">
+                    School and Sports
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" id="industry-tab" data-bs-toggle="tab" data-bs-target="#industryContent" type="button" role="tab" aria-controls="industryContent" aria-selected="false">
+                    Construction Uniforms and Safety Trades
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" id="category-tab" data-bs-toggle="tab" data-bs-target="#categoryContent" type="button" role="tab" aria-controls="categoryContent" aria-selected="false">
+                    Categories and Subcategories
+                </button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="uniformsContent" role="tabpanel" aria-labelledby="uniforms-tab">
+                <div class="row text-left mt-3"> <!-- Changed text-center to text-left -->
+                    <div class="col">
+                        <h5>Chef Uniforms</h5>
+                        <hr>
+                        <div><input type="checkbox" name="item_checks" value="RESTAURANT AND FOOD SERVICE UNIFORMS > Chef Uniforms > Chef coats" class="me-2">Chef coats</div>
+                        <div><input type="checkbox" name="item_checks" value="RESTAURANT AND FOOD SERVICE UNIFORMS > Chef Uniforms > Chef pants" class="me-2">Chef pants</div>
+                        <div><input type="checkbox" name="item_checks" value="RESTAURANT AND FOOD SERVICE UNIFORMS > Chef Uniforms > Chef Headwear" class="me-2">Chef Headwear</div>
+                        <div><input type="checkbox" name="item_checks" value="RESTAURANT AND FOOD SERVICE UNIFORMS > Chef Uniforms > Chef aprons" class="me-2">Chef aprons</div>
+                        <div><input type="checkbox" name="item_checks" value="RESTAURANT AND FOOD SERVICE UNIFORMS > Chef Uniforms > Chef Accessories" class="me-2">Chef Accessories</div>
+                    </div>
+                    <div class="col">
+                        <h5>Waitstaff Uniforms</h5>
+                        <hr>
+                        <div><input type="checkbox" name="item_checks" value="RESTAURANT AND FOOD SERVICE UNIFORMS > Waitstaff Uniforms > Waitstaff Tops" class="me-2">Waitstaff Tops</div>
+                        <div><input type="checkbox" name="item_checks" value="RESTAURANT AND FOOD SERVICE UNIFORMS > Waitstaff Uniforms > Waitstaff Aprons" class="me-2">Waitstaff Aprons</div>
+                        <div><input type="checkbox" name="item_checks" value="RESTAURANT AND FOOD SERVICE UNIFORMS > Waitstaff Uniforms > Waitstaff Polo" class="me-2">Waitstaff Polo</div>
+                        <div><input type="checkbox" name="item_checks" value="RESTAURANT AND FOOD SERVICE UNIFORMS > Waitstaff Uniforms > Waitstaff T shirts" class="me-2">Waitstaff T shirts</div>
+                        <div><input type="checkbox" name="item_checks" value="RESTAURANT AND FOOD SERVICE UNIFORMS > Waitstaff Uniforms > Waitstaff Bottoms" class="me-2">Waitstaff Bottoms</div>
+                        <div><input type="checkbox" name="item_checks" value="RESTAURANT AND FOOD SERVICE UNIFORMS > Waitstaff Uniforms > Waitstaff Headwear" class="me-2">Waitstaff Headwear</div>
+                        <div><input type="checkbox" name="item_checks" value="RESTAURANT AND FOOD SERVICE UNIFORMS > Waitstaff Uniforms > Waitstaff Accessories" class="me-2">Waitstaff Accessories</div>
+                    </div>
+                    <div class="col">
+                        <h5>Kitchen Uniforms</h5>
+                        <hr>
+                        <div><input type="checkbox" name="item_checks" value="RESTAURANT AND FOOD SERVICE UNIFORMS > Kitchen Uniforms > Kitchen Tops" class="me-2">Kitchen Tops</div>
+                        <div><input type="checkbox" name="item_checks" value="RESTAURANT AND FOOD SERVICE UNIFORMS > Kitchen Uniforms > Kitchen Aprons" class="me-2">Kitchen Aprons</div>
+                        <div><input type="checkbox" name="item_checks" value="RESTAURANT AND FOOD SERVICE UNIFORMS > Kitchen Uniforms > Kitchen Polo" class="me-2">Kitchen Polo</div>
+                        <div><input type="checkbox" name="item_checks" value="RESTAURANT AND FOOD SERVICE UNIFORMS > Kitchen Uniforms > Kitchen T shirts" class="me-2">Kitchen T shirts</div>
+                        <div><input type="checkbox" name="item_checks" value="RESTAURANT AND FOOD SERVICE UNIFORMS > Kitchen Uniforms > Kitchen Bottoms" class="me-2">Kitchen Bottoms</div>
+                        <div><input type="checkbox" name="item_checks" value="RESTAURANT AND FOOD SERVICE UNIFORMS > Kitchen Uniforms > Kitchen Headwear" class="me-2">Kitchen Headwear</div>
+                        <div><input type="checkbox" name="item_checks" value="RESTAURANT AND FOOD SERVICE UNIFORMS > Kitchen Uniforms > Kitchen Accessories" class="me-2">Kitchen Accessories</div>
+                    </div>
+                    <div class="col">
+                        <h5>Delivery Uniforms</h5>
+                         <hr>
+                         <div><input type="checkbox" name="item_checks" value="RESTAURANT AND FOOD SERVICE UNIFORMS > Delivery Uniforms > Delivery Tops" class="me-2">Delivery Tops</div>
+                         <div><input type="checkbox" name="item_checks" value="RESTAURANT AND FOOD SERVICE UNIFORMS > Delivery Uniforms > Delivery Polo" class="me-2">Delivery Polo</div>
+                         <div><input type="checkbox" name="item_checks" value="RESTAURANT AND FOOD SERVICE UNIFORMS > Delivery Uniforms > Delivery T shirts" class="me-2">Delivery T shirts</div>
+                         <div><input type="checkbox" name="item_checks" value="RESTAURANT AND FOOD SERVICE UNIFORMS > Delivery Uniforms > Delivery Jackets" class="me-2">Delivery Jackets</div>
+                         <div><input type="checkbox" name="item_checks" value="RESTAURANT AND FOOD SERVICE UNIFORMS > Delivery Uniforms > Delivery Bottoms" class="me-2">Delivery Bottoms</div>
+                         <div><input type="checkbox" name="item_checks" value="RESTAURANT AND FOOD SERVICE UNIFORMS > Delivery Uniforms > Delivery Headwear" class="me-2">Delivery Headwear</div>
+                         <div><input type="checkbox" name="item_checks" value="RESTAURANT AND FOOD SERVICE UNIFORMS > Delivery Uniforms > Delivery Accessories" class="me-2">Delivery Accessories</div>
+                    </div>
+                    <div class="col">
+                        <h5>Bartender Uniforms</h5>
+                        <hr>
+                        <div><input type="checkbox" name="item_checks" value="RESTAURANT AND FOOD SERVICE UNIFORMS > Bartender Uniforms > Bartender Tops" class="me-2">Bartender Tops</div>
+                        <div><input type="checkbox" name="item_checks" value="RESTAURANT AND FOOD SERVICE UNIFORMS > Bartender Uniforms > Bartender Polo" class="me-2">Bartender Polo</div>
+                        <div><input type="checkbox" name="item_checks" value="RESTAURANT AND FOOD SERVICE UNIFORMS > Bartender Uniforms > Bartender Tshirts" class="me-2">Bartender Tshirts</div>
+                        <div><input type="checkbox" name="item_checks" value="RESTAURANT AND FOOD SERVICE UNIFORMS > Bartender Uniforms > Bartender Aprons" class="me-2">Bartender Aprons</div>
+                        <div><input type="checkbox" name="item_checks" value="RESTAURANT AND FOOD SERVICE UNIFORMS > Bartender Uniforms > Bartender Bottoms" class="me-2">Bartender Bottoms</div>
+                        <div><input type="checkbox" name="item_checks" value="RESTAURANT AND FOOD SERVICE UNIFORMS > Bartender Uniforms > Bartender Headwear" class="me-2">Bartender Headwear</div>
+                        <div><input type="checkbox" name="item_checks" value="RESTAURANT AND FOOD SERVICE UNIFORMS > Bartender Uniforms > Bartender Accessories" class="me-2">Bartender Accessories</div>
+                    </div>
+                    <div class="col">
+                        <h5>Food Process Uniforms</h5>
+                        <hr>
+                        <div><input type="checkbox" name="item_checks" value="RESTAURANT AND FOOD SERVICE UNIFORMS > Food Process Uniforms > Food Process Tops" class="me-2">Food Process Tops</div>
+                        <div><input type="checkbox" name="item_checks" value="RESTAURANT AND FOOD SERVICE UNIFORMS > Food Process Uniforms > Food process Lab coats" class="me-2">Food process Lab coats</div>
+                        <div><input type="checkbox" name="item_checks" value="RESTAURANT AND FOOD SERVICE UNIFORMS > Food Process Uniforms > Food process gloves" class="me-2">Food process gloves</div>
+                        <div><input type="checkbox" name="item_checks" value="RESTAURANT AND FOOD SERVICE UNIFORMS > Food Process Uniforms > Disposable Uniforms" class="me-2">Disposable Uniforms</div>
+                        <div><input type="checkbox" name="item_checks" value="RESTAURANT AND FOOD SERVICE UNIFORMS > Food Process Uniforms > Food process Headwear" class="me-2">Food process Headwear</div>
+                        <div><input type="checkbox" name="item_checks" value="RESTAURANT AND FOOD SERVICE UNIFORMS > Food Process Uniforms > Food process freezer Jackets" class="me-2">Food process freezer Jackets</div>
+                        <div><input type="checkbox" name="item_checks" value="RESTAURANT AND FOOD SERVICE UNIFORMS > Food Process Uniforms > Food process Accessories" class="me-2">Food process Accessories</div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="automotiveContent" role="tabpanel" aria-labelledby="automotive-tab">
+                <div class="row text-left mt-3">
+                    <div class="col">
+                        <h5>Office and Reception</h5>
+                        <hr>
+                        <div><input type="checkbox" name="item_checks" value="AUTOMOTIVE AND TRANSPORTATION UNIFORMS > Office and Reception > Shirts" class="me-2">Shirts</div>
+                        <div><input type="checkbox" name="item_checks" value="AUTOMOTIVE AND TRANSPORTATION UNIFORMS > Office and Reception > Polo Shirts" class="me-2">Polo Shirts</div>
+                        <div><input type="checkbox" name="item_checks" value="AUTOMOTIVE AND TRANSPORTATION UNIFORMS > Office and Reception > Tops" class="me-2">Tops</div>
+                        <div><input type="checkbox" name="item_checks" value="AUTOMOTIVE AND TRANSPORTATION UNIFORMS > Office and Reception > Bottoms" class="me-2">Bottoms</div>
+                        <div><input type="checkbox" name="item_checks" value="AUTOMOTIVE AND TRANSPORTATION UNIFORMS > Office and Reception > Suits" class="me-2">Suits</div>
+                        <div><input type="checkbox" name="item_checks" value="AUTOMOTIVE AND TRANSPORTATION UNIFORMS > Office and Reception > Headwear" class="me-2">Headwear</div>
+                        <div><input type="checkbox" name="item_checks" value="AUTOMOTIVE AND TRANSPORTATION UNIFORMS > Office and Reception > Outerwear" class="me-2">Outerwear</div>
+                    </div>
+                   
+                    <div class="col">
+                        <h5>Mechanic Shop and Service</h5>
+                        <hr>
+                        <div><input type="checkbox" name="item_checks" value="AUTOMOTIVE AND TRANSPORTATION UNIFORMS > Mechanic Shop and Service > Shirts" class="me-2">Shirts</div>
+                        <div><input type="checkbox" name="item_checks" value="AUTOMOTIVE AND TRANSPORTATION UNIFORMS > Mechanic Shop and Service > Polo Shirts" class="me-2">Polo Shirts</div>
+                        <div><input type="checkbox" name="item_checks" value="AUTOMOTIVE AND TRANSPORTATION UNIFORMS > Mechanic Shop and Service > Tops" class="me-2">Tops</div>
+                        <div><input type="checkbox" name="item_checks" value="AUTOMOTIVE AND TRANSPORTATION UNIFORMS > Mechanic Shop and Service > Bottoms" class="me-2">Bottoms</div>
+                        <div><input type="checkbox" name="item_checks" value="AUTOMOTIVE AND TRANSPORTATION UNIFORMS > Mechanic Shop and Service > Lab Coats" class="me-2">Lab Coats</div>
+                        <div><input type="checkbox" name="item_checks" value="AUTOMOTIVE AND TRANSPORTATION UNIFORMS > Mechanic Shop and Service > Headwear" class="me-2">Headwear</div>
+                        <div><input type="checkbox" name="item_checks" value="AUTOMOTIVE AND TRANSPORTATION UNIFORMS > Mechanic Shop and Service > Coveralls" class="me-2">Coveralls</div>
+                    </div>
+                    <div class="col">
+                        <h5>Trucking and Delivery</h5>
+                        <hr>
+                        <div><input type="checkbox" name="item_checks" value="AUTOMOTIVE AND TRANSPORTATION UNIFORMS > Trucking and Delivery > Shirts" class="me-2">Shirts</div>
+                        <div><input type="checkbox" name="item_checks" value="AUTOMOTIVE AND TRANSPORTATION UNIFORMS > Trucking and Delivery > Polo Shirts" class="me-2">Polo Shirts</div>
+                        <div><input type="checkbox" name="item_checks" value="AUTOMOTIVE AND TRANSPORTATION UNIFORMS > Trucking and Delivery > T-Shirts" class="me-2">T-Shirts</div>
+                        <div><input type="checkbox" name="item_checks" value="AUTOMOTIVE AND TRANSPORTATION UNIFORMS > Trucking and Delivery > Pants and Shorts" class="me-2">Pants and Shorts</div>
+                        <div><input type="checkbox" name="item_checks" value="AUTOMOTIVE AND TRANSPORTATION UNIFORMS > Trucking and Delivery > Fleece Hoodies and Sweaters" class="me-2">Fleece Hoodies and Sweaters</div>
+                        <div><input type="checkbox" name="item_checks" value="AUTOMOTIVE AND TRANSPORTATION UNIFORMS > Trucking and Delivery > Jackets and Outerwear" class="me-2">Jackets and Outerwear</div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="healthcareContent" role="tabpanel" aria-labelledby="healthcare-tab">
+                <div class="row text-left mt-3">
+                    <div class="col">
+                        <div><input type="checkbox" name="item_checks" value="HEALTH CARE AND HOSPITAL UNIFORMS > Scrubs" class="me-2">Scrubs</div>
+                        <div><input type="checkbox" name="item_checks" value="HEALTH CARE AND HOSPITAL UNIFORMS > Lab Coats" class="me-2">Lab Coats</div>
+                        <div><input type="checkbox" name="item_checks" value="HEALTH CARE AND HOSPITAL UNIFORMS > Tops" class="me-2">Tops</div>
+                        <div><input type="checkbox" name="item_checks" value="HEALTH CARE AND HOSPITAL UNIFORMS > Tshirts" class="me-2">Tshirts</div>
+                        <div><input type="checkbox" name="item_checks" value="HEALTH CARE AND HOSPITAL UNIFORMS > Polo Shirts" class="me-2">Polo Shirts</div>
+                        <div><input type="checkbox" name="item_checks" value="HEALTH CARE AND HOSPITAL UNIFORMS > Bottoms" class="me-2">Bottoms</div>
+                        <div><input type="checkbox" name="item_checks" value="HEALTH CARE AND HOSPITAL UNIFORMS > Jackets and Vests" class="me-2">Jackets and Vests</div>
+
+                    </div>
+                    <div class="col">
+                        <div><input type="checkbox" name="item_checks" value="HEALTH CARE AND HOSPITAL UNIFORMS > Dresses" class="me-2">Dresses</div>
+                        <div><input type="checkbox" name="item_checks" value="HEALTH CARE AND HOSPITAL UNIFORMS > Gloves" class="me-2">Gloves</div>
+                        <div><input type="checkbox" name="item_checks" value="HEALTH CARE AND HOSPITAL UNIFORMS > Headwear" class="me-2">Headwear</div>
+                        <div><input type="checkbox" name="item_checks" value="HEALTH CARE AND HOSPITAL UNIFORMS > Face Masks" class="me-2">Face Masks</div>
+                        <div><input type="checkbox" name="item_checks" value="HEALTH CARE AND HOSPITAL UNIFORMS > Sanitiser and Soap" class="me-2">Sanitiser and Soap</div>
+                        <div><input type="checkbox" name="item_checks" value="HEALTH CARE AND HOSPITAL UNIFORMS > Air Fresheners" class="me-2">Air Fresheners</div>
+                        <div><input type="checkbox" name="item_checks" value="HEALTH CARE AND HOSPITAL UNIFORMS > Isolation Gowns" class="me-2">Isolation Gowns</div>
+                        <div><input type="checkbox" name="item_checks" value="HEALTH CARE AND HOSPITAL UNIFORMS > Footwear" class="me-2">Footwear</div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="hotelContent" role="tabpanel" aria-labelledby="health-tab">
+                <div class="row text-left mt-3">
+                    <div class="col">
+                        <h5>Front Desk and Office</h5>
+                        <hr>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Check in Front Desk and Office > Shirts" class="me-2">Shirts</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Check in Front Desk and Office > Tops" class="me-2">Tops</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Check in Front Desk and Office > Vests" class="me-2">Vests</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Check in Front Desk and Office > Outerwear" class="me-2">Outerwear</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Check in Front Desk and Office > Dresses" class="me-2">Dresses</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Check in Front Desk and Office > Knitwear" class="me-2">Knitwear</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Check in Front Desk and Office > Bottoms" class="me-2">Bottoms</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Check in Front Desk and Office > Suits" class="me-2">Suits</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Check in Front Desk and Office > Accessories" class="me-2">Accessories</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Check in Front Desk and Office > Polo Shirts" class="me-2">Polo Shirts</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Check in Front Desk and Office > T shirts" class="me-2">T shirts</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Check in Front Desk and Office > Headwear" class="me-2">Headwear</div>
+                    </div>
+                    
+                    <div class="col">
+                        <h5>Housekeeping</h5>
+                        <hr>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Housekeeping > Tops" class="me-2">Tops</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Housekeeping > Bottoms" class="me-2">Bottoms</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Housekeeping > Dresses" class="me-2">Dresses</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Housekeeping > Accessories" class="me-2">Accessories</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Housekeeping > Headwear" class="me-2">Headwear</div>
+                    </div>
+                    
+                    <div class="col">
+                        <h5>Restaurant and Bar</h5>
+                        <hr>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Restaurant and Bar > Chef coats" class="me-2">Chef coats</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Restaurant and Bar > Wait staff Aprons" class="me-2">Wait staff Aprons</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Restaurant and Bar > Waitstaff Tops" class="me-2">Waitstaff Tops</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Restaurant and Bar > Waitstaff Polo shirts" class="me-2">Waitstaff Polo shirts</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Restaurant and Bar > Bartender Aprons" class="me-2">Bartender Aprons</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Restaurant and Bar > Bartender Tops" class="me-2">Bartender Tops</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Restaurant and Bar > Hostess" class="me-2">Hostess</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Restaurant and Bar > Accessories" class="me-2">Accessories</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Restaurant and Bar > Pants" class="me-2">Pants</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Restaurant and Bar > Polo Shirts" class="me-2">Polo Shirts</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Restaurant and Bar > Tshirts" class="me-2">Tshirts</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Restaurant and Bar > Headwear" class="me-2">Headwear</div>
+                    </div>
+                    
+                    <div class="col">
+                        <h5>Casino</h5>
+                        <hr>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Casino > Shirts" class="me-2">Shirts</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Casino > Vests" class="me-2">Vests</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Casino > Bottoms" class="me-2">Bottoms</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Casino > Bow ties" class="me-2">Bow ties</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Casino > Accessories" class="me-2">Accessories</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Casino > Polo Shirts" class="me-2">Polo Shirts</div>
+                    </div>
+                    
+                    <div class="col">
+                        <h5>Spa</h5>
+                        <hr>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Spa > Shirts" class="me-2">Shirts</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Spa > Scrubs" class="me-2">Scrubs</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Spa > Bottoms" class="me-2">Bottoms</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Spa > Lab coats" class="me-2">Lab coats</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Spa > Bathrobes" class="me-2">Bathrobes</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Spa > Towels" class="me-2">Towels</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Spa > Sheets" class="me-2">Sheets</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Spa > Pillows" class="me-2">Pillows</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Spa > Furniture" class="me-2">Furniture</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Spa > Soap" class="me-2">Soap</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Spa > Sanitizer" class="me-2">Sanitizer</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Spa > Airfreshner" class="me-2">Airfreshner</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Spa > Hospital kits" class="me-2">Hospital kits</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Spa > First aid" class="me-2">First aid</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Spa > Pen" class="me-2">Pen</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Spa > Show bags" class="me-2">Show bags</div>
+                        <div><input type="checkbox" name="item_checks" value="HOTEL AND CASINO UNIFORMS > Spa > Slippers" class="me-2">Slippers</div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="tab-pane fade" id="securityContent" role="tabpanel" aria-labelledby="security-tab">
+                <div class="row text-left mt-3">
+                    <div class="col">
+                        <div><input type="checkbox" name="item_checks" value="SECURITY AND GOVERNMENT INSTITUTIONS UNIFORMS > Shirts" class="me-2">Shirts</div>
+                        <div><input type="checkbox" name="item_checks" value="SECURITY AND GOVERNMENT INSTITUTIONS UNIFORMS > Bottoms" class="me-2">Bottoms</div>
+                        <div><input type="checkbox" name="item_checks" value="SECURITY AND GOVERNMENT INSTITUTIONS UNIFORMS > Polo shirts" class="me-2">Polo shirts</div>
+                        <div><input type="checkbox" name="item_checks" value="SECURITY AND GOVERNMENT INSTITUTIONS UNIFORMS > T-shirts" class="me-2">T-shirts</div>
+                        <div><input type="checkbox" name="item_checks" value="SECURITY AND GOVERNMENT INSTITUTIONS UNIFORMS > Outerwear" class="me-2">Outerwear</div>
+                        <div><input type="checkbox" name="item_checks" value="SECURITY AND GOVERNMENT INSTITUTIONS UNIFORMS > Fleece" class="me-2">Fleece</div>
+                        <div><input type="checkbox" name="item_checks" value="SECURITY AND GOVERNMENT INSTITUTIONS UNIFORMS > Knitwear" class="me-2">Knitwear</div>
+                        <div><input type="checkbox" name="item_checks" value="SECURITY AND GOVERNMENT INSTITUTIONS UNIFORMS > Gloves" class="me-2">Gloves</div>
+                        <div><input type="checkbox" name="item_checks" value="SECURITY AND GOVERNMENT INSTITUTIONS UNIFORMS > Ties and Accessories" class="me-2">Ties and Accessories</div>
+                    </div>
+                    <div class="col">
+                        <div><input type="checkbox" name="item_checks" value="SECURITY AND GOVERNMENT INSTITUTIONS UNIFORMS > Headwear" class="me-2">Headwear</div>
+                        <div><input type="checkbox" name="item_checks" value="SECURITY AND GOVERNMENT INSTITUTIONS UNIFORMS > Sox and Basics" class="me-2">Sox and Basics</div>
+                        <div><input type="checkbox" name="item_checks" value="SECURITY AND GOVERNMENT INSTITUTIONS UNIFORMS > Footwear" class="me-2">Footwear</div>
+                        <div><input type="checkbox" name="item_checks" value="SECURITY AND GOVERNMENT INSTITUTIONS UNIFORMS > Tactical Apparel" class="me-2">Tactical Apparel</div>
+                        <div><input type="checkbox" name="item_checks" value="SECURITY AND GOVERNMENT INSTITUTIONS UNIFORMS > Disposable Products" class="me-2">Disposable Products</div>
+                        <div><input type="checkbox" name="item_checks" value="SECURITY AND GOVERNMENT INSTITUTIONS UNIFORMS > Badges and Name Tags" class="me-2">Badges and Name Tags</div>
+                        <div><input type="checkbox" name="item_checks" value="SECURITY AND GOVERNMENT INSTITUTIONS UNIFORMS > Flash Lights" class="me-2">Flash Lights</div>
+                        <div><input type="checkbox" name="item_checks" value="SECURITY AND GOVERNMENT INSTITUTIONS UNIFORMS > Duty Gear" class="me-2">Duty Gear</div>
+                        <div><input type="checkbox" name="item_checks" value="SECURITY AND GOVERNMENT INSTITUTIONS UNIFORMS > Flags" class="me-2">Flags</div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="tab-pane fade" id="schoolContent" role="tabpanel" aria-labelledby="school-tab">
+                <div class="row text-left mt-3">
+                    <div class="col">
+                        <h5>Boys</h5>
+                        <div><input type="checkbox" name="item_checks" value="SCHOOL AND SPORTS UNIFORMS > Boys > Shirts" class="me-2">Shirts</div>
+                        <div><input type="checkbox" name="item_checks" value="SCHOOL AND SPORTS UNIFORMS > Boys > Polo Shirts" class="me-2">Polo Shirts</div>
+                        <div><input type="checkbox" name="item_checks" value="SCHOOL AND SPORTS UNIFORMS > Boys > Bottoms" class="me-2">Bottoms</div>
+                        <div><input type="checkbox" name="item_checks" value="SCHOOL AND SPORTS UNIFORMS > Boys > Fleece" class="me-2">Fleece</div>
+                        <div><input type="checkbox" name="item_checks" value="SCHOOL AND SPORTS UNIFORMS > Boys > Jackets" class="me-2">Jackets</div>
+                        <div><input type="checkbox" name="item_checks" value="SCHOOL AND SPORTS UNIFORMS > Boys > T shirts" class="me-2">T shirts</div>
+
+                    </div>
+                    <div class="col">
+                        <h5>Girls</h5>
+                        <div><input type="checkbox" name="item_checks" value="SCHOOL AND SPORTS UNIFORMS > Girls > Shirts" class="me-2">Shirts</div>
+                        <div><input type="checkbox" name="item_checks" value="SCHOOL AND SPORTS UNIFORMS > Girls > Polo Shirts" class="me-2">Polo Shirts</div>
+                        <div><input type="checkbox" name="item_checks" value="SCHOOL AND SPORTS UNIFORMS > Girls > Bottoms" class="me-2">Bottoms</div>
+                        <div><input type="checkbox" name="item_checks" value="SCHOOL AND SPORTS UNIFORMS > Girls > Fleece" class="me-2">Fleece</div>
+                        <div><input type="checkbox" name="item_checks" value="SCHOOL AND SPORTS UNIFORMS > Girls > Jackets" class="me-2">Jackets</div>
+                        <div><input type="checkbox" name="item_checks" value="SCHOOL AND SPORTS UNIFORMS > Girls > T shirts" class="me-2">T shirts</div>                    
+                    </div>
+                    <div class="col">
+                        <h5>Men</h5>
+                        <div><input type="checkbox" name="item_checks" value="SCHOOL AND SPORTS UNIFORMS > Men > Shirts" class="me-2">Shirts</div>
+                        <div><input type="checkbox" name="item_checks" value="SCHOOL AND SPORTS UNIFORMS > Men > Polo Shirts" class="me-2">Polo Shirts</div>
+                        <div><input type="checkbox" name="item_checks" value="SCHOOL AND SPORTS UNIFORMS > Men > Bottoms" class="me-2">Bottoms</div>
+                        <div><input type="checkbox" name="item_checks" value="SCHOOL AND SPORTS UNIFORMS > Men > Fleece" class="me-2">Fleece</div>
+                        <div><input type="checkbox" name="item_checks" value="SCHOOL AND SPORTS UNIFORMS > Men > Jackets" class="me-2">Jackets</div>
+                        <div><input type="checkbox" name="item_checks" value="SCHOOL AND SPORTS UNIFORMS > Men > T shirts" class="me-2">T shirts</div>                   
+                    </div>
+                    <div class="col">
+                        <h5>Ladies</h5>
+                        <div><input type="checkbox" name="item_checks" value="SCHOOL AND SPORTS UNIFORMS > Ladies > Shirts" class="me-2">Shirts</div>
+                        <div><input type="checkbox" name="item_checks" value="SCHOOL AND SPORTS UNIFORMS > Ladies > Polo Shirts" class="me-2">Polo Shirts</div>
+                        <div><input type="checkbox" name="item_checks" value="SCHOOL AND SPORTS UNIFORMS > Ladies > Bottoms" class="me-2">Bottoms</div>
+                        <div><input type="checkbox" name="item_checks" value="SCHOOL AND SPORTS UNIFORMS > Ladies > Fleece" class="me-2">Fleece</div>
+                        <div><input type="checkbox" name="item_checks" value="SCHOOL AND SPORTS UNIFORMS > Ladies > Jackets" class="me-2">Jackets</div>
+                        <div><input type="checkbox" name="item_checks" value="SCHOOL AND SPORTS UNIFORMS > Ladies > T shirts" class="me-2">T shirts</div>                   
+                    </div>
+                    <div class="col">
+                        <h5>Unisex</h5>
+                        <div><input type="checkbox" name="item_checks" value="SCHOOL AND SPORTS UNIFORMS > Unisex > Sox" class="me-2">Sox</div>
+                        <div><input type="checkbox" name="item_checks" value="SCHOOL AND SPORTS UNIFORMS > Unisex > Hankerchief" class="me-2">Hankerchief</div>
+                        <div><input type="checkbox" name="item_checks" value="SCHOOL AND SPORTS UNIFORMS > Unisex > Flags" class="me-2">Flags</div>
+                        <div><input type="checkbox" name="item_checks" value="SCHOOL AND SPORTS UNIFORMS > Unisex > Trophies" class="me-2">Trophies</div>
+                        <div><input type="checkbox" name="item_checks" value="SCHOOL AND SPORTS UNIFORMS > Unisex > Awards" class="me-2">Awards</div>
+                        <div><input type="checkbox" name="item_checks" value="SCHOOL AND SPORTS UNIFORMS > Unisex > Headwear" class="me-2">Headwear</div>
+                        <div><input type="checkbox" name="item_checks" value="SCHOOL AND SPORTS UNIFORMS > Unisex > Accessories" class="me-2">Accessories</div>
+                        <div><input type="checkbox" name="item_checks" value="SCHOOL AND SPORTS UNIFORMS > Unisex > Catalog" class="me-2">Catalog</div>                  
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="industryContent" role="tabpanel" aria-labelledby="industry-tab">
+                <div class="row text-left mt-3">
+                    <div class="col">
+                        <!-- Construction and Landscape Section -->
+                        <h6>Construction and Landscape</h6>
+                        <hr>
+                        <div><input type="checkbox" name="item_checks" value="CONSTRUCTION UNIFORMS AND SAFETY TRADES > Construction and Landscape > Safety Vests" class="me-2">Safety Vests</div>
+                        <div><input type="checkbox" name="item_checks" value="CONSTRUCTION UNIFORMS AND SAFETY TRADES > Construction and Landscape > Safety Jackets" class="me-2">Safety Jackets</div>
+                        <div><input type="checkbox" name="item_checks" value="CONSTRUCTION UNIFORMS AND SAFETY TRADES > Construction and Landscape > Safety Shirts" class="me-2">Safety Shirts</div>
+                        <div><input type="checkbox" name="item_checks" value="CONSTRUCTION UNIFORMS AND SAFETY TRADES > Construction and Landscape > Safety Polo" class="me-2">Safety Polo</div>
+                        <div><input type="checkbox" name="item_checks" value="CONSTRUCTION UNIFORMS AND SAFETY TRADES > Construction and Landscape > Safety Bottoms" class="me-2">Safety Bottoms</div>
+                        <div><input type="checkbox" name="item_checks" value="CONSTRUCTION UNIFORMS AND SAFETY TRADES > Construction and Landscape > Safety Hoodies and Fleece" class="me-2">Safety Hoodies and Fleece</div>
+                        <div><input type="checkbox" name="item_checks" value="CONSTRUCTION UNIFORMS AND SAFETY TRADES > Construction and Landscape > Safety T shirts" class="me-2">Safety T shirts</div>
+                        <div><input type="checkbox" name="item_checks" value="CONSTRUCTION UNIFORMS AND SAFETY TRADES > Construction and Landscape > Safety Headwear" class="me-2">Safety Headwear</div>
+                        <div><input type="checkbox" name="item_checks" value="CONSTRUCTION UNIFORMS AND SAFETY TRADES > Construction and Landscape > Safety Footwear" class="me-2">Safety Footwear</div>
+                    </div>
+                    
+                    <div class="col">
+                        <!-- Electrical and Plumbing Section -->
+                        <h6>Electrical and Plumbing</h6>
+                        <hr>
+                        <div><input type="checkbox" name="item_checks" value="CONSTRUCTION UNIFORMS AND SAFETY TRADES > Electrical and Plumbing > Safety Vests" class="me-2">Safety Vests</div>
+                        <div><input type="checkbox" name="item_checks" value="CONSTRUCTION UNIFORMS AND SAFETY TRADES > Electrical and Plumbing > Safety Jackets" class="me-2">Safety Jackets</div>
+                        <div><input type="checkbox" name="item_checks" value="CONSTRUCTION UNIFORMS AND SAFETY TRADES > Electrical and Plumbing > Safety Shirts" class="me-2">Safety Shirts</div>
+                        <div><input type="checkbox" name="item_checks" value="CONSTRUCTION UNIFORMS AND SAFETY TRADES > Electrical and Plumbing > Safety Polo" class="me-2">Safety Polo</div>
+                        <div><input type="checkbox" name="item_checks" value="CONSTRUCTION UNIFORMS AND SAFETY TRADES > Electrical and Plumbing > Safety Bottoms" class="me-2">Safety Bottoms</div>
+                        <div><input type="checkbox" name="item_checks" value="CONSTRUCTION UNIFORMS AND SAFETY TRADES > Electrical and Plumbing > Safety Hoodies and Fleece" class="me-2">Safety Hoodies and Fleece</div>
+                        <div><input type="checkbox" name="item_checks" value="CONSTRUCTION UNIFORMS AND SAFETY TRADES > Electrical and Plumbing > Safety T shirts" class="me-2">Safety T shirts</div>
+                        <div><input type="checkbox" name="item_checks" value="CONSTRUCTION UNIFORMS AND SAFETY TRADES > Electrical and Plumbing > Safety Headwear" class="me-2">Safety Headwear</div>
+                        <div><input type="checkbox" name="item_checks" value="CONSTRUCTION UNIFORMS AND SAFETY TRADES > Electrical and Plumbing > Safety Footwear" class="me-2">Safety Footwear</div>
+                    </div>
+                    
+                    <div class="col">
+                        <!-- Mining and Industrial Section -->
+                        <h6>Mining and Industrial</h6>
+                        <hr>
+                        <div><input type="checkbox" name="item_checks" value="CONSTRUCTION UNIFORMS AND SAFETY TRADES > Mining and Industrial > Safety Vests" class="me-2">Safety Vests</div>
+                        <div><input type="checkbox" name="item_checks" value="CONSTRUCTION UNIFORMS AND SAFETY TRADES > Mining and Industrial > Safety Jackets" class="me-2">Safety Jackets</div>
+                        <div><input type="checkbox" name="item_checks" value="CONSTRUCTION UNIFORMS AND SAFETY TRADES > Mining and Industrial > Safety Shirts" class="me-2">Safety Shirts</div>
+                        <div><input type="checkbox" name="item_checks" value="CONSTRUCTION UNIFORMS AND SAFETY TRADES > Mining and Industrial > Safety Polo" class="me-2">Safety Polo</div>
+                        <div><input type="checkbox" name="item_checks" value="CONSTRUCTION UNIFORMS AND SAFETY TRADES > Mining and Industrial > Safety Bottoms" class="me-2">Safety Bottoms</div>
+                        <div><input type="checkbox" name="item_checks" value="CONSTRUCTION UNIFORMS AND SAFETY TRADES > Mining and Industrial > Safety Hoodies and Fleece" class="me-2">Safety Hoodies and Fleece</div>
+                        <div><input type="checkbox" name="item_checks" value="CONSTRUCTION UNIFORMS AND SAFETY TRADES > Mining and Industrial > Safety T shirts" class="me-2">Safety T shirts</div>
+                        <div><input type="checkbox" name="item_checks" value="CONSTRUCTION UNIFORMS AND SAFETY TRADES > Mining and Industrial > Safety Headwear" class="me-2">Safety Headwear</div>
+                        <div><input type="checkbox" name="item_checks" value="CONSTRUCTION UNIFORMS AND SAFETY TRADES > Mining and Industrial > Safety Footwear" class="me-2">Safety Footwear</div>
+                    </div>
+                    
+                    <div class="col">
+                        <!-- Energy and Utilities Section -->
+                        <h6>Energy and Utilities</h6>
+                        <hr>
+                        <div><input type="checkbox" name="item_checks" value="CONSTRUCTION UNIFORMS AND SAFETY TRADES > Energy and Utilities > Safety Vests" class="me-2">Safety Vests</div>
+                        <div><input type="checkbox" name="item_checks" value="CONSTRUCTION UNIFORMS AND SAFETY TRADES > Energy and Utilities > Safety Jackets" class="me-2">Safety Jackets</div>
+                        <div><input type="checkbox" name="item_checks" value="CONSTRUCTION UNIFORMS AND SAFETY TRADES > Energy and Utilities > Safety Shirts" class="me-2">Safety Shirts</div>
+                        <div><input type="checkbox" name="item_checks" value="CONSTRUCTION UNIFORMS AND SAFETY TRADES > Energy and Utilities > Safety Polo" class="me-2">Safety Polo</div>
+                        <div><input type="checkbox" name="item_checks" value="CONSTRUCTION UNIFORMS AND SAFETY TRADES > Energy and Utilities > Safety Bottoms" class="me-2">Safety Bottoms</div>
+                        <div><input type="checkbox" name="item_checks" value="CONSTRUCTION UNIFORMS AND SAFETY TRADES > Energy and Utilities > Safety Hoodies and Fleece" class="me-2">Safety Hoodies and Fleece</div>
+                        <div><input type="checkbox" name="item_checks" value="CONSTRUCTION UNIFORMS AND SAFETY TRADES > Energy and Utilities > Safety T shirts" class="me-2">Safety T shirts</div>
+                        <div><input type="checkbox" name="item_checks" value="CONSTRUCTION UNIFORMS AND SAFETY TRADES > Energy and Utilities > Safety Headwear" class="me-2">Safety Headwear</div>
+                        <div><input type="checkbox" name="item_checks" value="CONSTRUCTION UNIFORMS AND SAFETY TRADES > Energy and Utilities > Safety Footwear" class="me-2">Safety Footwear</div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="categoryContent" role="tabpanel" aria-labelledby="category-tab">
+                <div class="row text-left mt-3">
+                    <div class="col">
+                        <!-- Golf and Polo Shirts Section -->
+                        <h6>Golf and Polo Shirts</h6>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Golf and Polo Shirts > All" class="me-2">All</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Golf and Polo Shirts > Cotton" class="me-2">Cotton</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Golf and Polo Shirts > Polycotton" class="me-2">Polycotton</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Golf and Polo Shirts > Dryfit" class="me-2">Dryfit</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Golf and Polo Shirts > Performance" class="me-2">Performance</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Golf and Polo Shirts > Special Stockoffers" class="me-2">Special Stockoffers</div>
+                    </div>
+                    
+                    <div class="col">
+                        <!-- Fleece Sweatshirts and Vests Section -->
+                        <h6>Fleece Sweatshirts and Vests</h6>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Fleece Sweatshirts and Vests > All" class="me-2">All</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Fleece Sweatshirts and Vests > Hoodies" class="me-2">Hoodies</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Fleece Sweatshirts and Vests > Sweatshirts" class="me-2">Sweatshirts</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Fleece Sweatshirts and Vests > Full Zip" class="me-2">Full Zip</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Fleece Sweatshirts and Vests > 1/4 Zip" class="me-2">1/4 Zip</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Fleece Sweatshirts and Vests > Crew Neck" class="me-2">Crew Neck</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Fleece Sweatshirts and Vests > Vests" class="me-2">Vests</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Fleece Sweatshirts and Vests > Special Stock Offers" class="me-2">Special Stock Offers</div>
+                    </div>
+                    
+                    <div class="col">
+                        <!-- Jackets and Outerwear Section -->
+                        <h6>Jackets and Outerwear</h6>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Jackets and Outerwear > All" class="me-2">All</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Jackets and Outerwear > Fleece Jackets" class="me-2">Fleece Jackets</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Jackets and Outerwear > Lightweight and Raincoats" class="me-2">Lightweight and Raincoats</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Jackets and Outerwear > Thermal and Performance" class="me-2">Thermal and Performance</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Jackets and Outerwear > Softshell Jackets" class="me-2">Softshell Jackets</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Jackets and Outerwear > 3-on-1 Jackets" class="me-2">3-on-1 Jackets</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Jackets and Outerwear > Insulated Jackets" class="me-2">Insulated Jackets</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Jackets and Outerwear > Puffy Jackets" class="me-2">Puffy Jackets</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Jackets and Outerwear > Vests" class="me-2">Vests</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Jackets and Outerwear > Special Stock Offers" class="me-2">Special Stock Offers</div>
+                    </div>
+                    
+                    <div class="col">
+                        <!-- Headwear Section -->
+                        <h6>Headwear</h6>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Headwear > All" class="me-2">All</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Headwear > Baseball Caps" class="me-2">Baseball Caps</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Headwear > Trucker Hats" class="me-2">Trucker Hats</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Headwear > Visors" class="me-2">Visors</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Headwear > Tuques" class="me-2">Tuques</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Headwear > Beanies" class="me-2">Beanies</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Headwear > Flexfit" class="me-2">Flexfit</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Headwear > Special Stock Offers" class="me-2">Special Stock Offers</div>
+                    </div>
+                    
+                    <div class="col">
+                        <!-- Suits, Knits, and Separates Section -->
+                        <h6>Suits, Knits, and Separates</h6>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Suits, Knits, and Separates > All" class="me-2">All</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Suits, Knits, and Separates > Suits" class="me-2">Suits</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Suits, Knits, and Separates > Suit Jackets" class="me-2">Suit Jackets</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Suits, Knits, and Separates > Suit Pants" class="me-2">Suit Pants</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Suits, Knits, and Separates > Dressy Vest" class="me-2">Dressy Vest</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Suits, Knits, and Separates > Dressy Sweaters" class="me-2">Dressy Sweaters</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Suits, Knits, and Separates > Special Stock Offers" class="me-2">Special Stock Offers</div>
+                    </div>
+                    
+                    <div class="col">
+                        <!-- Shirts Section -->
+                        <h6>Shirts</h6>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Shirts > All" class="me-2">All</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Shirts > Casual Shirts" class="me-2">Casual Shirts</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Shirts > Dressy Shirts" class="me-2">Dressy Shirts</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Shirts > Oxford Shirts" class="me-2">Oxford Shirts</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Shirts > Poplin Shirts" class="me-2">Poplin Shirts</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Shirts > Long Sleeve Shirts" class="me-2">Long Sleeve Shirts</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Shirts > Short Sleeve Shirts" class="me-2">Short Sleeve Shirts</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Shirts > Stain Resistant Shirts" class="me-2">Stain Resistant Shirts</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Shirts > Wrinkle-Free Shirts" class="me-2">Wrinkle-Free Shirts</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Shirts > Special Stock Offers" class="me-2">Special Stock Offers</div>
+                    </div>
+                    
+                    <div class="col">
+                        <!-- Bottoms Section -->
+                        <h6>Bottoms</h6>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Bottoms > All" class="me-2">All</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Bottoms > Pants" class="me-2">Pants</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Bottoms > Dressy Pants" class="me-2">Dressy Pants</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Bottoms > Skirts" class="me-2">Skirts</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Bottoms > Sweatpants" class="me-2">Sweatpants</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Bottoms > Casual Pants" class="me-2">Casual Pants</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Bottoms > Special Stock Offers" class="me-2">Special Stock Offers</div>
+                    </div>
+                    
+                    <div class="col">
+                        <!-- T-Shirts Section -->
+                        <h6>T-Shirts</h6>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > T-Shirts > All" class="me-2">All</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > T-Shirts > Basic" class="me-2">Basic</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > T-Shirts > Cotton" class="me-2">Cotton</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > T-Shirts > Dryfit" class="me-2">Dryfit</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > T-Shirts > Polycotton" class="me-2">Polycotton</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > T-Shirts > Long Sleeve" class="me-2">Long Sleeve</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > T-Shirts > Special Stock Offers" class="me-2">Special Stock Offers</div>
+                    </div>
+                    
+                    <div class="col">
+                        <!-- Accessories Section -->
+                        <h6>Accessories</h6>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Accessories > All" class="me-2">All</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Accessories > Ties" class="me-2">Ties</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Accessories > Belts" class="me-2">Belts</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Accessories > Cufflings" class="me-2">Cufflings</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Accessories > Bow Ties" class="me-2">Bow Ties</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Accessories > More" class="me-2">More</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Accessories > Special Offers" class="me-2">Special Offers</div>
+                        <div><input type="checkbox" name="item_checks" value="CATEGORIES AND SUBCATEGORIES > Accessories > Special Stock Offers" class="me-2">Special Stock Offers</div>
+                    </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</form>
+{% endif %}
+        
+</body>
+</html>
