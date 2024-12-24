@@ -58,16 +58,6 @@ def submit():
     product_name = request.form.get('product_name') 
     
     # Retrieving prices for each size
-    price_xs = request.form.get('price_xs')
-    price_s = request.form.get('price_s')
-    price_m = request.form.get('price_m')
-    price_l = request.form.get('price_l')
-    price_xl = request.form.get('price_xl')
-    price_2xl = request.form.get('price_2xl')
-    price_3xl = request.form.get('price_3xl')
-    price_4xl = request.form.get('price_4xl')
-    price_5xl = request.form.get('price_5xl')
-    price_6xl = request.form.get('price_6xl')
     price_other = request.form.get('price_other')
     print("Submitted Selections:", selections)
 
@@ -89,22 +79,10 @@ def submit():
     # Build the JSON structure for this submission
     result = {
         "SKU": sku,
-        "Category": categories,
-        "Gender": gender,
         "Manual_name": product_name,
-        "Prices": {  # Using a dictionary instead of a list to store key-value pairs
-            "XS": price_xs,
-            "S": price_s,
-            "M": price_m,
-            "L": price_l,
-            "XL": price_xl,
-            "2XL": price_2xl,
-            "3XL": price_3xl,
-            "4XL": price_4xl,
-            "5XL": price_5xl,
-            "6XL": price_6xl,
-            "Other": price_other
-        }
+        "Gender": gender,
+        "Price_change": price_other,
+        "Category": categories
     }
 
 

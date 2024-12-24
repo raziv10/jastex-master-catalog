@@ -271,6 +271,7 @@ function toggleInput(checkboxId, inputGroupId) {
                         </div>
                         <!-- Description and other details below -->
                         <p class="product-description"><b>Description:</b>{{ item.Description }}</p>
+                        <p class="product-size"><b>Size:</b>{{ item.Size }}</p>
                         <!-- Corrected to show item.Description -->
                         <div class="d-flex align-items-center justify-content-start">
                             <div>
@@ -285,40 +286,12 @@ function toggleInput(checkboxId, inputGroupId) {
                             
                         </div>
                         <div id="priceInputs" class="input-group-spacing" style="display:none;">
-                            <p>*For items which are not clothing put it in Other</p>
+                            <p>*For items which are not clothing put it in New Price</p>
                             <div class="size-inputs">
-                                <label for="price_xs">XS:</label>
-                                <input type="text" id="price_xs" name="price_xs" size="5">
+        
                             
-                                <label for="price_s">S:</label>
-                                <input type="text" id="price_s" name="price_s" size="5">
-                            
-                                <label for="price_m">M:</label>
-                                <input type="text" id="price_m" name="price_m" size="5">
-                            
-                                <label for="price_l">L:</label>
-                                <input type="text" id="price_l" name="price_l" size="5">
-                            
-                                <label for="price_xl">XL:</label>
-                                <input type="text" id="price_xl" name="price_xl" size="5">
-                            
-                                <label for="price_2xl">2XL:</label>
-                                <input type="text" id="price_2xl" name="price_2xl" size="5">
-                            
-                                <label for="price_3xl">3XL:</label>
-                                <input type="text" id="price_3xl" name="price_3xl" size="5">
-                            
-                                <label for="price_4xl">4XL:</label>
-                                <input type="text" id="price_4xl" name="price_4xl" size="5">
-                            
-                                <label for="price_5xl">5XL:</label>
-                                <input type="text" id="price_5xl" name="price_5xl" size="5">
-                            
-                                <label for="price_6xl">6XL:</label>
-                                <input type="text" id="price_6xl" name="price_6xl" size="5">
-                            
-                                <label for="price_other">Other:</label>
-                                <input type="text" id="price_other" name="price_other" size="5">
+                                <label for="price_other">New Price:</label>
+                                <input type="text" id="price_other" name="price_other" size="35">
                             </div>
                             
                         </div>
