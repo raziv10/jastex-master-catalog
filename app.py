@@ -67,23 +67,22 @@ def submit():
     # Extract Gender
     gender = next((item for item in selections if item.startswith("Gender")), None)
     
-    categories = [item for item in selections if " > " in item and not item.startswith("Gender")]
+    ## For Non Brands
+    # categories = [item for item in selections if " > " in item and not item.startswith("Gender")]
     
-    # Fetch the 'item.Category' value from the form
-    item_category = form_data.get("item_checks", "").strip()  # Ensure to fetch the value from the form correctly
     
-    # Add `item.Category` to categories
-    if item_category:  # Check if it's not empty
-        categories.append(item_category)
-    
-    # Include 'Other Category' if provided and append to the `item_category`
-    if other_category and other_category.strip():  # Ensure it's not empty or just whitespace
-        # Create a new category combining `item_category` and `other_category`
-        if item_category:
-            categories.append(f"{item_category} > {other_category.strip()}")
-        else:
-            categories.append(f"Other Category > {other_category.strip()}")
+    # # Fetch the 'item.Category' value from the form
+    # if other_category and other_category.strip():  # Ensure it's not empty or just whitespace
+    #     categories.append(f"Other Category > {other_category.strip()}")
 
+        # Fetch the submitted 'categories' and 'other_category'
+    categories = request.form.get('categories', '').strip()
+    other_category = request.form.get('other_category', '').strip()
+
+    # Process the categories
+    category_list = []
+    if other_category:
+        category_list.append(f"{categories} > {other_category}")
 
 
     # Build the JSON structure for this submission
@@ -92,7 +91,7 @@ def submit():
         "Manual_name": product_name,
         "Gender": gender,
         "Price_change": price_other,
-        "Category": categories
+        "Category": category_list
     }
 
 
