@@ -66,20 +66,23 @@ def submit():
 
     # Extract Gender
     gender = next((item for item in selections if item.startswith("Gender")), None)
-
-    # Extract Categories
-    categories = [item for item in selections if " > " in item and not item.startswith("Gender")]
-
-
-    # Include 'Other Category' if provided
-    if other_category and other_category.strip():  # Ensure it's not empty or just whitespace
-        categories.append(f"Other Category > {other_category.strip()}")
     
-    # Fetch the 'item.Category' value
+    categories = [item for item in selections if " > " in item and not item.startswith("Gender")]
+    
+    # Fetch the 'item.Category' value from the form
     item_category = form_data.get("item_checks", "").strip()  # Ensure to fetch the value from the form correctly
     
+    # Add `item.Category` to categories
     if item_category:  # Check if it's not empty
         categories.append(item_category)
+    
+    # Include 'Other Category' if provided and append to the `item_category`
+    if other_category and other_category.strip():  # Ensure it's not empty or just whitespace
+        # Create a new category combining `item_category` and `other_category`
+        if item_category:
+            categories.append(f"{item_category} > {other_category.strip()}")
+        else:
+            categories.append(f"Other Category > {other_category.strip()}")
 
 
 
