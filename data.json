@@ -1,242 +1,1567 @@
 [
-  {
-    "ID": 124700,
-    "SKU": "8110",
-    "Name": "Econo Bib Aprons",
-    "Description": "<p>A value-priced mainstay of our Econo Line. Its weight has a substantial feel while its polyester ties ensure a comfortable fit for all staff.</p> <p>100% Spun Polyester 6.4-oz. Fabric<br>30″ Wide x 33″ Long</p>",
-    "Regular_price": "",
-    "Categories": "Restaurant > Aprons, Uniforms > Hospitality > Restaurant, Restaurant",
-    "Images": "https://jastex.ca/wp-content/uploads/2024/12/Econo-Bib-Aprons.avif",
-    "Size": "",
-    "supplier": "Premium Uniforms"
-  },
-  {
-    "ID": 124710,
-    "SKU": "1900",
-    "Name": "Bistro Aprons",
-    "Description": "<p>A favourite of restaurant staff everywhere, this stylish full-length apron features two strong self-ties at the waist for a secure yet comfortable fit.</p> <p>65/35 Poly/Cotton 7.25-oz. Twill Fabric<br>Style #: 1900 – 2 Pockets</p>",
-    "Regular_price": "",
-    "Categories": "Restaurant > Aprons, Uniforms > Hospitality > Restaurant",
-    "Images": "https://jastex.ca/wp-content/uploads/2024/12/Bistro-Aprons.avif",
-    "Size": "",
-    "supplier": "Premium Uniforms"
-  },
-  {
-    "ID": 124721,
-    "SKU": "1400",
-    "Name": "Cobbler Aprons",
-    "Description": "<p>This popular multi-purpose style helps maintain a clean, uniform appearance while offering coverage over the front and back.</p> <p>65/35 Poly/Cotton 4.5-oz. Poplin Fabric<br>18″ Wide x 28″ Long</p>",
-    "Regular_price": "",
-    "Categories": "Restaurant > Aprons, Uniforms > Hospitality, Uniforms > Hospitality > Restaurant",
-    "Images": "https://jastex.ca/wp-content/uploads/2024/12/Cobbler-Aprons.avif",
-    "Size": "",
-    "supplier": "Premium Uniforms"
-  },
-  {
-    "ID": 124727,
-    "SKU": "1300",
-    "Name": "Coin Apron",
-    "Description": "<p>With a metal buckle to accommodate increased weight, this well-established design has become the trusted standard for service staff throughout the food industry.</p> <p>65/35 Poly/Cotton 7.25-oz. Twill Fabric<br>Style #: 1300 – 16” Wide x 10” Long</p>",
-    "Regular_price": "",
-    "Categories": "Restaurant > Aprons, Uniforms > Hospitality > Restaurant",
-    "Images": "https://jastex.ca/wp-content/uploads/2024/12/Coin-Apron.avif",
-    "Size": "",
-    "supplier": "Premium Uniforms"
-  },
-  {
-    "ID": 124729,
-    "SKU": "1244",
-    "Name": "Contemporary Denim Chef Apron",
-    "Description": "<p>100% Cotton 10.0-oz. Denim Fabric<br>Style #: 1244 – 30” Wide x 35” Long</p>",
-    "Regular_price": "",
-    "Categories": "Restaurant > Aprons, Uniforms > Hospitality > Restaurant",
-    "Images": "https://jastex.ca/wp-content/uploads/2024/12/Contemporary-Denim-Chef-Apron.avif",
-    "Size": "",
-    "supplier": "Premium Uniforms"
-  },
-  {
-    "ID": 124731,
-    "SKU": "1241",
-    "Name": "Denim Bib Apron",
-    "Description": "<p>Durable and substantial denim material makes this apron a must-have for machine shop duty. One chest pocket and one easy-to-reach lower pocket offer increased utility and convenience.</p> <p>100% Cotton 10.0-oz. Denim Fabric<br>Style #: 1241 – 27” Wide x 33” Long</p>",
-    "Regular_price": "",
-    "Categories": "Restaurant > Aprons, Uniforms > Hospitality > Restaurant",
-    "Images": "https://jastex.ca/wp-content/uploads/2024/12/Denim-Bib-Apron.avif",
-    "Size": "",
-    "supplier": "Premium Uniforms"
-  },
-  {
-    "ID": 124734,
-    "SKU": "1150",
-    "Name": "Designer Bib Aprons",
-    "Description": "<p>A unique full-length design with an adjustable neckband to customize length to ensure comfort for all employees.</p> <p>65/35 Poly/Cotton 7.25-oz. Twill Fabric<br>Style #: 1150 – 2 Pockets, 29” Wide x 34” Long</p>",
-    "Regular_price": "",
-    "Categories": "Restaurant > Aprons, Uniforms > Hospitality > Restaurant",
-    "Images": "https://jastex.ca/wp-content/uploads/2024/12/Designer-Bib-Aprons.avif",
-    "Size": "",
-    "supplier": "Premium Uniforms"
-  },
-  {
-    "ID": 124748,
-    "SKU": "1052TT",
-    "Name": "Wide-Striped Bib Apron",
-    "Description": "<p>This trendy striped apron is offered in multiple colours, giving three different looks of charm and sophistication.</p> <p>100% Spun Polyester 7.1-oz. Fabric<br>Style #: 1052TT – No Pockets, 28” Wide x 33” Long</p>",
-    "Regular_price": "",
-    "Categories": "Restaurant > Aprons, Uniforms > Hospitality > Restaurant",
-    "Images": "https://jastex.ca/wp-content/uploads/2024/12/Wide-Striped-Bib-Apron.avif",
-    "Size": "",
-    "supplier": "Premium Uniforms"
-  },
-  {
-    "ID": 124766,
-    "SKU": "8190",
-    "Name": "Spun Polyester Bistro Aprons",
-    "Description": "<p>100% MJS Spun Polyester 7.1-oz. Fabric<br>Style #: 8190 – 2 Pockets, 36” Wide x 29” Long</p>",
-    "Regular_price": "",
-    "Categories": "Restaurant > Aprons, Uniforms > Hospitality > Restaurant",
-    "Images": "https://jastex.ca/wp-content/uploads/2024/12/Spun-Polyester-Bistro-Aprons.avif",
-    "Size": "",
-    "supplier": "Premium Uniforms"
-  },
-  {
-    "ID": 124783,
-    "SKU": "",
-    "Name": "100% Cotton Chef Coats",
-    "Description": "<p>The sharp look and substantial feel of 100% cotton marks this style as the perfect blend of crisp lines and lasting comfort.</p> <p>100% Cotton 8.2-oz. Twill Fabric<br>Style #: 5400 – Plastic Buttons</p>",
-    "Regular_price": "",
-    "Categories": "Restaurant > Chef Coat",
-    "Images": "https://jastex.ca/wp-content/uploads/2024/12/100-Cotton-Chef-Coats.avif",
-    "Size": "",
-    "supplier": "Premium Uniforms"
-  },
-  {
-    "ID": 124785,
-    "SKU": "5370",
-    "Name": "Chef Coat with Contrast Trim",
-    "Description": "<p>This double-breasted chef coat, with attractive, bold contrasting trim and matching buttons, creates a statement of professional confidence and flair.</p> <p>65/35 Poly/Cotton 7.25-oz. Twill Fabric<br>Style #: 5370 – Plastic Buttons</p>",
-    "Regular_price": "",
-    "Categories": "Restaurant > Chef Coat",
-    "Images": "https://jastex.ca/wp-content/uploads/2024/12/Chef-Coat-with-Contrast-Trim.avif",
-    "Size": "",
-    "supplier": "Premium Uniforms"
-  },
-  {
-    "ID": 124787,
-    "SKU": "5450",
-    "Name": "Chef Coats with Mesh Yoke",
-    "Description": "<p>This unique lightweight chef coat offers forward thinking features in a classic double-breasted design.</p> <p>65/35 Poly/Cotton 5.6-oz. Brushed Twill Fabric<br>Style #: 5450 – Long Sleeves</p>",
-    "Regular_price": "",
-    "Categories": "Restaurant > Chef Coat",
-    "Images": "https://jastex.ca/wp-content/uploads/2024/12/Chef-Coats-with-Mesh-Yoke-5450-Premium-UniformsFlat-Cloth-Covered-ButtonChefs-Choice-Chef-Coats-with-Mesh-Yoke.avif",
-    "Size": "",
-    "supplier": "Premium Uniforms"
-  },
       {
-        "ID": "901045885",
-        "Type": "variable",
-        "SKU": "9010",
-        "Name": "Pocket Ez Slide Bib Apron",
-        "Description": "<p> E-Z Slide Bib Apron with three pockets is perfect for the restaurant; cafe; or bakery...</p>",
-        "Regular_price": "",
-        "Categories": "Brands > REDWOOD ROSS, Category >Aprons>Aprons ,Size>",
-        "Images": "https://photos.Premium Uniformsgarment.com/HighRes/9010_010.jpg",
-        "Size": "0",
-        "supplier": "Premium Uniforms"
-    },
-    {
-        "ID": "410623822",
-        "Type": "variable",
-        "SKU": "4106",
-        "Name": "Apron Vest With Waist Pockets",
-        "Description": "<p> Apron vest with waist pockets is perfect for hardware or grocery retail centers...</p>",
-        "Regular_price": "21.5-27.96",
-        "Categories": "Brands > REDWOOD ROSS, Category >Aprons>Male Vests ,Size>",
-        "Images": "https://photos.Premium Uniformsgarment.com/HighRes/4106_007.jpg,https://photos.Premium Uniformsgarment.com/HighRes/4106_010.jpg",
-        "Size": "2XL,3XL,4XL,L,M,S,XL,XS",
-        "supplier": "Premium Uniforms"
-    },
-    {
-        "ID": "909845907",
-        "Type": "variable",
-        "SKU": "9098",
-        "Name": "Pocket Waist Apron",
-        "Description": "<p> Add some style to the kitchen with our Denim Waist Apron!</p>",
-        "Regular_price": "27.9",
-        "Categories": "Brands > REDWOOD ROSS, Category >Aprons>Aprons ,Size>",
-        "Images": "https://photos.Premium Uniformsgarment.com/HighRes/9098_914.jpg",
-        "Size": "0",
-        "supplier": "Premium Uniforms"
-    },
-    {
-        "ID": "900545861",
-        "Type": "variable",
-        "SKU": "9005",
-        "Name": "Pocket Butcher Apron",
-        "Description": "<p> Butcher apron with two large pockets is a kitchen essential.</p>",
-        "Regular_price": "4.0-12.5",
-        "Categories": "Brands > REDWOOD ROSS, Category >Aprons>Aprons ,Size>",
-        "Images": "https://photos.Premium Uniformsgarment.com/HighRes/9005_000.jpg,https://photos.Premium Uniformsgarment.com/HighRes/9005_007.jpg",
-        "Size": "0",
-        "supplier": "Premium Uniforms"
-    },
-    {
-        "ID": "901245886",
-        "Type": "variable",
-        "SKU": "9012",
-        "Name": "Pocket Long Bistro Apron",
-        "Description": "<p> Bistro apron with two pockets in a 33″ length is a fine dining essential.</p>",
-        "Regular_price": "2.0-11.9",
-        "Categories": "Brands > REDWOOD ROSS, Category >Aprons>Aprons ,Size>",
-        "Images": "https://photos.Premium Uniformsgarment.com/HighRes/9012_000.jpg,https://photos.Premium Uniformsgarment.com/HighRes/9012_010.jpg",
-        "Size": "0",
-        "supplier": "Premium Uniforms"
-    },
-    {
-        "ID": "904645897",
-        "Type": "variable",
-        "SKU": "9046",
-        "Name": "Ladies Premier Apron",
-        "Description": "<p> Premier Apron coordinates perfectly with dress.</p>",
-        "Regular_price": "4",
-        "Categories": "Brands > REDWOOD ROSS, Category >Aprons>Aprons ,Size>",
-        "Images": "https://photos.Premium Uniformsgarment.com/HighRes/9046_905.jpg",
-        "Size": "0",
-        "supplier": "Premium Uniforms"
-    },
-    {
-        "ID": "336322183",
-        "Type": "variable",
-        "SKU": "3363",
-        "Name": "Button Chef Coat With Mesh",
-        "Description": "<p> Classic full cut chef coat with 10 matching buttons and mesh back.</p>",
-        "Regular_price": "29.0-43.5",
-        "Categories": "Brands > REDWOOD ROSS, Category >Culinary>Chef Coats ,Size>",
-        "Images": "https://photos.Premium Uniformsgarment.com/HighRes/3363_000.jpg,https://photos.Premium Uniformsgarment.com/HighRes/3363_010.jpg",
-        "Size": "2XL,3XL,4XL,5XL,6XL,L,M,S,XL,XS",
-        "supplier": "Premium Uniforms"
-    },
-    {
-        "ID": "46322",
-        "Type": "variable",
-        "SKU": "HT00",
-        "Name": "Poplin Chef Hat",
-        "Description": "<p> Traditional Chef Hat in soft poplin fabric.</p>",
-        "Regular_price": "8.7-10.4",
-        "Categories": "Brands > REDWOOD ROSS, Category >Culinary>Chef Accessories ,Size>",
-        "Images": "https://photos.Premium Uniformsgarment.com/HighRes/HT00_000.jpg,https://photos.Premium Uniformsgarment.com/HighRes/HT00_010.jpg",
-        "Size": "0",
-        "supplier": "Premium Uniforms"
-    },
-    {
-        "ID": "333322163",
-        "Type": "variable",
-        "SKU": "3333",
-        "Name": "Button Short Sleeve Chef Coat With Mesh",
-        "Description": "<p> Mid-weight short sleeve chef coat offers back mesh with 10 button placket.</p>",
-        "Regular_price": "25.0-40.5",
-        "Categories": "Brands > REDWOOD ROSS, Category >Culinary>Chef Coats ,Size>",
-        "Images": "https://photos.Premium Uniformsgarment.com/HighRes/3333_000.jpg,https://photos.Premium Uniformsgarment.com/HighRes/3333_010.jpg",
-        "Size": "2XL,3XL,4XL,5XL,6XL,L,M,S,XL,XS",
-        "supplier": "Premium Uniforms"
-    }
-]
+        "SKU": "16224",
+        "Name": "M-ACADIA SS Polo",
+        "Colors": [
+          "Black",
+          "Forest Green",
+          "Heather Dark Charcoal",
+          "New Royal",
+          "Team Red",
+          "Vintage Navy",
+          "White"
+        ],
+        "Size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL",
+          "4XL",
+          "5XL"
+        ],
+        "Images": "https://www.trimarksportswear.com/trimarknew/product/large2/16224988_D_on-model-front-eureka-logo.jpg",
+        "AdditionalImagess": [
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16224988_D_on-model-front-eureka-logo.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16224_995_B_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16224_640_B_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16224_988_B_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16224_561_B_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16224_358_B_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16224_573_B_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16224_125_B_OFF.jpg"
+          ]
+        ],
+        "Description": "Along with it's classic look and feel, the cotton Acadia Polo offers a unique branding opportunity inside the back yoke, allowing you to create a completely custom piece. Other features of the versatile Acadia Polo include a self fabric collar and hanger loop inside the neck. FABRIC: 100% Cotton jersey knit, 145 g/m\u00b2 (4.3 oz/yd\u00b2) SOLID COLORS. 60% Cotton 40% Polyester jersey knit, 145 g/m\u00b2 (4.3 oz/yd\u00b2) HEATHER COLORS.",
+        "Fabric": "N/A",
+        "Regular_price": "$18.15"
+      },
+      {
+        "SKU": "16207",
+        "Name": "(M) ALBULA Short sleeve polo",
+        "Colors": [
+          "Black/Steel Grey",
+          "Chill/Steel Grey",
+          "Dark Plum/White",
+          "Juniper/White",
+          "Metro Blue/White",
+          "Saffron/White"
+        ],
+        "Size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL",
+          "4XL",
+          "5XL"
+        ],
+        "Images": "https://www.trimarksportswear.com/trimarknew/product/large2/16207_429_B_front-on-model.jpg",
+        "AdditionalImagess": [
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16207_429_B_front-on-model.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16207_995_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16207_429_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16207_585_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16207_655_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16207_550_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16207_270_OFF.jpg"
+          ]
+        ],
+        "Description": "The Abula Short Sleeve Polo is great for teams, universities, golfers or anyone who wants to make sporty and stylish impression. Made from 100% micro polyester textured knit and available in 6 attractive colours. FABRIC: 100% Micro polyester textured knit with wicking finish. 150 g/m\u00b2 (4.4 oz/yd\u00b2). Contrast: 100% Polyester flat knit collar.",
+        "Fabric": "N/A",
+        "Regular_price": "$32.15"
+      },
+      {
+        "SKU": "96207",
+        "Name": "(W) ALBULA Short sleeve polo",
+        "Colors": [
+          "Black/Steel Grey",
+          "Chill/Steel Grey",
+          "Dark Plum/White",
+          "Juniper/White",
+          "Metro Blue/White",
+          "Saffron/White"
+        ],
+        "Size": [
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ],
+        "Images": "https://www.trimarksportswear.com/trimarknew/product/large2/96207655_B_on-model-front.jpg",
+        "AdditionalImagess": [
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96207655_B_on-model-front.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96207_995_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96207_429_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96207_585_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96207_655_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96207_550_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96207_270_OFF.jpg"
+          ]
+        ],
+        "Description": "The Abula Short Sleeve Polo is great for teams, universities, golfers or anyone who wants to make sporty and stylish impression. Made from 100% micro polyester textured knit and available in 6 attractive colours. FABRIC: 100% Micro polyester textured knit with wicking finish. 150 g/m\u00b2 (4.4 oz/yd\u00b2). Contrast: 100% Polyester flat knit collar.",
+        "Fabric": "N/A",
+        "Regular_price": "$32.15"
+      },
+      {
+        "SKU": "16510",
+        "Name": "M-EMORY SS Polo",
+        "Colors": [
+          "Black Smoke Heather/Black",
+          "Heather Grey/Grey Storm",
+          "Metro Blue Heather/Navy",
+          "Vintage Red Heather/Black"
+        ],
+        "Size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL",
+          "4XL",
+          "5XL"
+        ],
+        "Images": "https://www.trimarksportswear.com/trimarknew/product/large2/16510_932_B_on-model-front.jpg",
+        "AdditionalImagess": [
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16510_932_B_on-model-front.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16510_994_B_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16510_932_B_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16510_550_B_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16510_369_B_OFF.jpg"
+          ]
+        ],
+        "Description": "The Emory is a stylish polo with a delicate feel and eye-catching linear heathered fabric. The trendy two piece collar provides both style & comfort. Made with moisture wicking and breathable micropolyester, the Emory is snag resistant with UV protection and an anti-microbial finish. The partial rib sleeve cuffs provide a perfect location for your logo. FABRIC: 100% Micro polyester heather jersey peached knit with anti-microbial and wicking finish, 140 g/m\u00b2 (4.1 oz/yd\u00b2). CONTRAST: 100% Polyester flat knit collar and partial sleeve cuffs.",
+        "Fabric": "N/A",
+        "Regular_price": "$25.50"
+      },
+      {
+        "SKU": "96510",
+        "Name": "(W) EMORY SS Polo",
+        "Colors": [
+          "Black Smoke Heather/Black",
+          "Heather Grey/Grey Storm",
+          "Metro Blue Heather/Navy",
+          "Vintage Red Heather/Black"
+        ],
+        "Size": [
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ],
+        "Images": "https://www.trimarksportswear.com/trimarknew/product/large2/96510932_D_on-model_front-smash-logo.jpg",
+        "AdditionalImagess": [
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96510932_D_on-model_front-smash-logo.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96510_994_B_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96510_932_B_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96510_550_B_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96510_369_B_OFF.jpg"
+          ]
+        ],
+        "Description": "The Emory is a stylish polo with a delicate feel and eye-catching linear heathered fabric. The trendy two piece collar provides both style & comfort. Made with moisture wicking and breathable micropolyester, the Emory is snag resistant with UV protection and an anti-microbial finish. The partial rib sleeve cuffs provide a perfect location for your logo. FABRIC: 100% Micro polyester heather jersey peached knit with anti-microbial and wicking finish, 140 g/m\u00b2 (4.1 oz/yd\u00b2). CONTRAST: 100% Polyester flat knit collar and partial sleeve cuffs.",
+        "Fabric": "N/A",
+        "Regular_price": "$25.50"
+      },
+      {
+        "SKU": "16704",
+        "Name": "M-ROYCE SS Polo",
+        "Colors": [
+          "Apple/Grey Storm",
+          "Black Smoke/Grey Storm",
+          "Light Grey/Grey Storm",
+          "Olympic Blue/Grey Storm"
+        ],
+        "Size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL",
+          "4XL",
+          "5XL"
+        ],
+        "Images": "https://www.trimarksportswear.com/trimarknew/product/large2/16704_994_B_on-model-front.jpg",
+        "AdditionalImagess": [
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16704_994_B_on-model-front.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16704_653_B_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16704_994_B_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16704_935_B_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16704_431_B_OFF.jpg"
+          ]
+        ],
+        "Description": "The Royce Short Sleeve Polo is specially fabricated to keep you cool. Made with a special cooling yarn knit, the Royce is moisture wicking, breathable and snag resistant with UV protection and an anti-microbial finish. Other features include a snap closure placket, welded shoulder stripe, tagless heat transfer label and shaped side slits. FABRIC: 100% Micro polyester textured cooling yarn knit with anti-microbial and wicking finish, 130 g/m\u00b2 (3.8 oz/yd\u00b2). CONTRAST: 92% Polyester 8% Elastane mesh knit with anti-microbial and wicking finish.",
+        "Fabric": "N/A",
+        "Regular_price": "$31.50"
+      },
+      {
+        "SKU": "96704",
+        "Name": "W-ROYCE SS Polo",
+        "Colors": [
+          "Apple/Grey Storm",
+          "Black Smoke/Grey Storm",
+          "Light Grey/Grey Storm",
+          "Olympic Blue/Grey Storm"
+        ],
+        "Size": [
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ],
+        "Images": "https://www.trimarksportswear.com/trimarknew/product/large2/96704431_D_on-model-front-crown-logo.jpg",
+        "AdditionalImagess": [
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96704431_D_on-model-front-crown-logo.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96704_653_B_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96704_994_B_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96704_935_B_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96704_431_B_OFF.jpg"
+          ]
+        ],
+        "Description": "The Royce Short Sleeve Polo is specially fabricated to keep you cool. Made with a special cooling yarn knit, the Royce is moisture wicking, breathable and snag resistant with UV protection and an anti-microbial finish. Other features include a snap closure placket, welded shoulder stripe, tagless heat transfer label and shaped side slits. FABRIC: 100% Micro polyester textured cooling yarn knit with anti-microbial and wicking finish, 130 g/m\u00b2 (3.8 oz/yd\u00b2). CONTRAST: 92% Polyester 8% Elastane mesh knit with anti-microbial and wicking finish.",
+        "Fabric": "N/A",
+        "Regular_price": "$31.50"
+      },
+      {
+        "SKU": "17814",
+        "Name": "M-DAKOTA Three Quarter Tee",
+        "Colors": [
+          "Black/White",
+          "Heather Dk Char/Med Hthr Grey",
+          "Kelly Heather/Medium Hthr Grey",
+          "Magenta Heather/Med Hthr Grey",
+          "Medium Heather Grey/White",
+          "New Royal Hthr/Med Hthr Grey",
+          "New Royal Hthr/White",
+          "Orange Heather/Med Hthr Grey",
+          "Purple Heather/Med Hthr Grey",
+          "Team Red Heather/Med Hthr Grey",
+          "Yellow Heather/Med Hthr Grey"
+        ],
+        "Size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL",
+          "4XL",
+          "5XL"
+        ],
+        "Images": "https://www.trimarksportswear.com/trimarknew/product/large2/17814358_D_on-model-front-manfield-logo.jpg",
+        "AdditionalImagess": [
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/17814358_D_on-model-front-manfield-logo.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/17814_995_B_OFF_FRT.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/17814_988_B_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/17814_638_B_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/17814_337_B_OFF_FRT.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/17814_939_B_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/17814_561_B_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/17814_415_B_OFF_FRT.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/17814_279_B_OFF_FRT.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/17814_590_B_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/17814_358_B_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/17814_234_B_OFF_FRT.jpg"
+          ]
+        ],
+        "Description": "The ultra-soft Dakota Three-Quarter Tee is a cotton-poly blend that's compatible with our unique inFusion branding. It's got a classic sporty look, with a crew neck and rib knit collar. For women, the Dakota has a dropped back hem, shaped seams and a tapered waist. FABRIC: 52% Cotton 48% Polyester heather jersey knit, 148 g/m\u00b2 (4.4 oz/yd\u00b2) HEATHER COLORS. 65% Polyester 35% Cotton jersey knit. 145 g/m\u00b2 (4.3 oz/yd\u00b2) SOLID COLORS. CONTRAST: 52% Cotton 48% Polyester 1x1 rib knit collar HEATHER COLORS. 65% Polyester 35% Cotton 1x1 rib knit collar SOLID COLORS.",
+        "Fabric": "N/A",
+        "Regular_price": "$30.00"
+      },
+      {
+        "SKU": "97814",
+        "Name": "W-DAKOTA Three Quarter Tee",
+        "Colors": [
+          "Black/White",
+          "Heather Dk Char/Med Hthr Grey",
+          "Kelly Heather/Medium Hthr Grey",
+          "Magenta Heather/Med Hthr Grey",
+          "Medium Heather Grey/White",
+          "New Royal Hthr/Med Hthr Grey",
+          "New Royal Hthr/White",
+          "Orange Heather/Med Hthr Grey",
+          "Purple Heather/Med Hthr Grey",
+          "Team Red Heather/Med Hthr Grey",
+          "Yellow Heather/Med Hthr Grey"
+        ],
+        "Size": [
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ],
+        "Images": "https://www.trimarksportswear.com/trimarknew/product/large2/97814939_D_on-model-front_cosmos-logo.jpg",
+        "AdditionalImagess": [
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/97814939_D_on-model-front_cosmos-logo.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/97814_995_B_OFF_FRT.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/97814_988_B_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/97814_638_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/97814_337_B_OFF_FRT.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/97814_939_B_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/97814_561_B_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/97814_415_B_OFF_FRT.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/97814_279_B_OFF_FRT.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/97814_590_B_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/97814_358_B_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/97814_234_B_OFF_FRT.jpg"
+          ]
+        ],
+        "Description": "The ultra-soft Dakota Three-Quarter Tee is a cotton-poly blend that's compatible with our unique inFusion branding. It's got a classic sporty look, with a crew neck and rib knit collar. For women, the Dakota has a dropped back hem, shaped seams and a tapered waist. FABRIC: 52% Cotton 48% Polyester heather jersey knit, 148 g/m\u00b2 (4.4 oz/yd\u00b2) HEATHER COLORS. 65% Polyester 35% Cotton jersey knit. 145 g/m\u00b2 (4.3 oz/yd\u00b2) SOLID COLORS. CONTRAST: 52% Cotton 48% Polyester 1x1 rib knit collar HEATHER COLORS. 65% Polyester 35% Cotton 1x1 rib knit collar SOLID COLORS.",
+        "Fabric": "N/A",
+        "Regular_price": "$30.00"
+      },
+      {
+        "SKU": "18306",
+        "Name": "Men's DEGE Eco Knit Half Zip",
+        "Colors": [
+          "Heather Charcoal/Black",
+          "Heather Grey/Black",
+          "Loden Heather/Black",
+          "Metro Blue Heather/Black",
+          "Vintage Red Heather/Black"
+        ],
+        "Size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL",
+          "4XL",
+          "5XL"
+        ],
+        "Images": "https://www.trimarksportswear.com/trimarknew/product/large2/18306_986_D_on-model-front.jpg",
+        "AdditionalImagess": [
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/18306_986_D_on-model-front.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/18306_986_B_OFF_FRT.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/18306_932_B_OFF_FRT.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/18306_684_B_OFF_FRT.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/18306_550_B_OFF_FRT.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/18306_369_B_OFF_FRT.jpg"
+          ]
+        ],
+        "Description": "Want to feel good about what you're wearing? This half-zip is made from recycled polyester AND it looks great. The convertible collar gives you two different ways to wear it. It also has moisture-wicking, snag-resistant, wash-and-wear fabric with UPF 40+ protection (light colors UPF 15-24) and an anti-microbial finish to keep you feeling fresh. FABRIC: 53% Polyester 47% Recycled polyester textured doubleknit with anti-microbial and wicking finish, 160 g/m\u00b2 (4.7 oz/yd\u00b2). CONTRAST: 100% Polyester doubleknit birdseye mesh knit inserts with wicking finish.",
+        "Fabric": "N/A",
+        "Regular_price": "$82.40"
+      },
+      {
+        "SKU": "98306",
+        "Name": "Women's DEGE Eco Knit Half Zip",
+        "Colors": [
+          "Heather Charcoal/Black",
+          "Heather Grey/Black",
+          "Loden Heather/Black",
+          "Metro Blue Heather/Black",
+          "Vintage Red Heather/Black"
+        ],
+        "Size": [
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ],
+        "Images": "https://www.trimarksportswear.com/trimarknew/product/large2/98306_932_D_on-model-front-1.jpg",
+        "AdditionalImagess": [
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/98306_932_D_on-model-front-1.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/98306_986_B_OFF_FRT.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/98306_932_B_OFF_FRT.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/98306_684_B_OFF_FRT.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/98306_550_B_OFF_FRT.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/98306_369_B_OFF_FRT.jpg"
+          ]
+        ],
+        "Description": "Want to feel good about what you're wearing? This half-zip is made from recycled polyester AND it looks great. The convertible collar gives you two different ways to wear it. Shaped seams and a dropped back hem on the women's styling for a great fit. It also has moisture-wicking, snag-resistant, wash-and-wear fabric with UPF 40+ protection (light colors UPF 15-24) and an anti-microbial finish to keep you feeling fresh. FABRIC: 53% Polyester 47% Recycled polyester textured doubleknit with anti-microbial and wicking finish, 160 g/m\u00b2 (4.7 oz/yd\u00b2). CONTRAST: 100% Polyester doubleknit birdseye mesh knit inserts with wicking finish.",
+        "Fabric": "N/A",
+        "Regular_price": "$82.40"
+      },
+      {
+        "SKU": "96224",
+        "Name": "W-ACADIA SS Polo",
+        "Colors": [
+          "Black",
+          "Forest Green",
+          "Heather Dark Charcoal",
+          "New Royal",
+          "Team Red",
+          "Vintage Navy",
+          "White"
+        ],
+        "Size": [
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ],
+        "Images": "https://www.trimarksportswear.com/trimarknew/product/large2/96224_358_B_on-model-front.jpg",
+        "AdditionalImagess": [
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96224_358_B_on-model-front.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96224_995_B_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96224_640_B_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96224_988_B_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96224_561_B_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96224_358_B_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96224_573_B_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96224_125_B_OFF.jpg"
+          ]
+        ],
+        "Description": "Along with it's classic look and feel, the cotton Acadia Polo offers a unique branding opportunity inside the back yoke, allowing you to create a completely custom piece. Other features of the versatile Acadia Polo include a self fabric collar and hanger loop inside the neck. FABRIC: 100% Cotton jersey knit, 145 g/m\u00b2 (4.3 oz/yd\u00b2) SOLID COLORS. 60% Cotton 40% Polyester jersey knit, 145 g/m\u00b2 (4.3 oz/yd\u00b2) HEATHER COLORS.",
+        "Fabric": "N/A",
+        "Regular_price": "$18.15"
+      },
+      {
+        "SKU": "18304",
+        "Name": "Men's VEGA Tech Quarter Zip",
+        "Colors": [
+          "Black",
+          "Heather Charcoal",
+          "Navy",
+          "New Royal",
+          "Steel Grey",
+          "Team Red",
+          "White"
+        ],
+        "Size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL",
+          "4XL",
+          "5XL"
+        ],
+        "Images": "https://www.trimarksportswear.com/trimarknew/product/large2/18304_ON.jpg",
+        "AdditionalImagess": [
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/18304_ON.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/18304_995_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/18304_986_B_OFF_FRT.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/18304_575_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/18304_561_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/18304_945_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/18304_358_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/18304_125_OFF.jpg"
+          ]
+        ],
+        "Description": "IMAGINEER CREATIONS The sporty Vega Tech quarter zip for men's and youth and half zip for women's is a versatile pullover designed for wash and wear convenience. This EZ Care tech top is made with a breathable, moisture wicking fabric, it also offers UV protection and resists snagging. FABRIC: 100% Micro polyester interlock knit with wicking finish, 135 g/m\u00b2 (4 oz/yd\u00b2). UV Protection: UPF 40+",
+        "Fabric": "N/A",
+        "Regular_price": "N/A"
+      },
+      {
+        "SKU": "98304",
+        "Name": "Women's VEGA Tech Half Zip",
+        "Colors": [
+          "Black",
+          "Heather Charcoal",
+          "Navy",
+          "New Royal",
+          "Steel Grey",
+          "Team Red",
+          "White"
+        ],
+        "Size": [
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ],
+        "Images": "https://www.trimarksportswear.com/trimarknew/product/large2/98304_ON.jpg",
+        "AdditionalImagess": [
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/98304_ON.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/98304_995_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/98304_986_B_OFF_FRT.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/98304_575_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/98304_561_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/98304_945_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/98304_358_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/98304_125_OFF.jpg"
+          ]
+        ],
+        "Description": "IMAGINEER CREATIONS The sporty Vega Tech quarter zip for men's and youth and half zip for women's is a versatile pullover designed for wash and wear convenience. This EZ Care tech top is made with a breathable, moisture wicking fabric, it also offers UV protection and resists snagging. FABRIC: 100% Micro polyester interlock knit with wicking finish, 135 g/m\u00b2 (4 oz/yd\u00b2). UV Protection: UPF 40+",
+        "Fabric": "N/A",
+        "Regular_price": "$50.00"
+      },
+      {
+        "SKU": "18137",
+        "Name": "Men's TAMARACK Full Zip Jacket",
+        "Colors": [
+          "Black/Heather Charcoal",
+          "Hi-Liter Green/Heather Charcoal",
+          "Olympic Blue/Heather Charcoal",
+          "Team Red/Heather Charcoal",
+          "Yellow/Heather Charcoal"
+        ],
+        "Size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ],
+        "Images": "https://www.trimarksportswear.com/trimarknew/product/large2/18137_431_D_on-model-front.jpg",
+        "AdditionalImagess": [
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/18137_431_D_on-model-front.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/18137_995_OFF_Front.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/18137_625_OFF_Front.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/18137_431_OFF_Front.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/18137_358_OFF_Front.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/18137_234_OFF_Front.jpg"
+          ]
+        ],
+        "Description": "Whether it's the sales team or the soccer team, this sporty full-zip is a team favorite. With an on-trend color pop and snag-resistant, wash-and-wear fabric, the Tamarack looks good no matter how often it's washed. It has thumb exits for easy layering and zippered pockets to keep your valuables safe. FABRIC: 100% Polyester textured heather interlock doubleknit, 220 g/m\u00b2 (6.5 oz/yd\u00b2). CONTRAST: 100% Polyester doubleknit birdseye mesh knit with wicking finish inner collar, zipper flap & piping.",
+        "Fabric": "N/A",
+        "Regular_price": "$105.00"
+      },
+      {
+        "SKU": "98137",
+        "Name": "Women's TAMARACK Full Zip Jacket",
+        "Colors": [
+          "Black/Heather Charcoal",
+          "Hi-Liter Green/Heather Charcoal",
+          "Olympic Blue/Heather Charcoal",
+          "Team Red/Heather Charcoal",
+          "Yellow/Heather Charcoal"
+        ],
+        "Size": [
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ],
+        "Images": "https://www.trimarksportswear.com/trimarknew/product/large2/98137_995_D_on-model-front.jpg",
+        "AdditionalImagess": [
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/98137_995_D_on-model-front.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/98137_995_B_OFF_FRT.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/98137_625_B_OFF_FRT.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/98137_431_B_OFF_FRT.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/98137_358_B_OFF_FRT.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/98137_234_B_OFF_FRT.jpg"
+          ]
+        ],
+        "Description": "Whether it's the sales team or the soccer team, this sporty full-zip is a team favorite. With an on-trend color pop and snag-resistant, wash-and-wear fabric, the Tamarack looks good no matter how often it's washed. It has thumb exits for easy layering and zippered pockets to keep your valuables safe. FABRIC: 100% Polyester textured heather interlock doubleknit, 220 g/m\u00b2 (6.5 oz/yd\u00b2). CONTRAST: 100% Polyester doubleknit birdseye mesh knit with wicking finish inner collar, zipper flap & piping.",
+        "Fabric": "N/A",
+        "Regular_price": "$105.00"
+      },
+      {
+        "SKU": "12605",
+        "Name": "Men's EGMONT Packable Jacket",
+        "Colors": [
+          "Aspen Blue/Steel Grey",
+          "Black/Steel Grey",
+          "Grey Storm/Steel Grey",
+          "Hi-Liter Green/Steel Grey",
+          "Navy/Steel Grey",
+          "New Royal/Steel Grey",
+          "Team Red/Steel Grey",
+          "White/Steel Grey",
+          "Yellow/Steel Grey"
+        ],
+        "Size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL",
+          "4XL",
+          "5XL"
+        ],
+        "Images": "https://www.trimarksportswear.com/trimarknew/product/large2/12605_92605_ONPFP.jpg",
+        "AdditionalImagess": [
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/12605_92605_ONPFP.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/12605_430_OFF_Front.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/12605_995_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/12605_991_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/12605_625_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/12605_575_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/12605_561_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/12605_358_B_OFF_FRT.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/12605_125_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/12605_234_OFF_Front.jpg"
+          ]
+        ],
+        "Description": "IMAGINEER CREATIONS A fully packable jacket lets you bring the Egmont Packable Jacket everywhere you go. Easy to stow and ready to keep you dry when needed, the Egmont is available in seven amazing colours. This lightweight jacket packs away into the lower left pocket. It features Shieldtech properties, water resistant coating and wind resistant. As well as, contrast reverse coil centre front zipper with easy grip pull, lower concealed reverse coil zipper pockets, elasticized sleeve cuffs with thumb exit, back ventilation and up to size 5XL. Decorate the pouch for maximum brand impact. FABRIC: OUTER SHELL: 100% Polyester 240T with water resistant (600mm) coating and water repellent finish, 80 g/m\u00b2 (2.4 oz/yd\u00b2).",
+        "Fabric": "N/A",
+        "Regular_price": "$60.00"
+      },
+      {
+        "SKU": "92605",
+        "Name": "Women's EGMONT Packable Jacket",
+        "Colors": [
+          "Aspen Blue/Steel Grey",
+          "Black/Steel Grey",
+          "Grey Storm/Steel Grey",
+          "Hi-Liter Green/Steel Grey",
+          "Navy/Steel Grey",
+          "New Royal/Steel Grey",
+          "Team Red/Steel Grey",
+          "White/Steel Grey",
+          "Yellow/Steel Grey"
+        ],
+        "Size": [
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ],
+        "Images": "https://www.trimarksportswear.com/trimarknew/product/large2/92605_625_ON.jpg",
+        "AdditionalImagess": [
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/92605_625_ON.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/92605_430_OFF_Front.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/92605_995_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/92605_991_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/92605_625_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/92605_575_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/92605_561_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/92605_358_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/92605_125_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/92605_234_OFF_Front.jpg"
+          ]
+        ],
+        "Description": "IMAGINEER CREATIONS A fully packable jacket lets you bring the Egmont Packable Jacket everywhere you go. Easy to stow and ready to keep you dry when needed, the Egmont is available in seven amazing colours. This lightweight jacket packs away into the lower left pocket. It features Shieldtech properties, water resistant coating and wind resistant. As well as, contrast reverse coil centre front zipper with easy grip pull, lower concealed reverse coil zipper pockets, elasticized sleeve cuffs with thumb exit and back ventilation. Decorate the pouch for maximum brand impact. FABRIC: OUTER SHELL: 100% Polyester 240T with water resistant (600mm) coating and water repellent finish, 80 g/m\u00b2 (2.4 oz/yd\u00b2).",
+        "Fabric": "N/A",
+        "Regular_price": "$60.00"
+      },
+      {
+        "SKU": "12939",
+        "Name": "Men's ORACLE Softshell Jacket",
+        "Colors": [
+          "Black",
+          "Grey Storm",
+          "New Royal",
+          "Silver",
+          "Team Red"
+        ],
+        "Size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL",
+          "4XL",
+          "5XL"
+        ],
+        "Images": "https://www.trimarksportswear.com/trimarknew/product/large2/12939_991_D_on-model-front.jpg",
+        "AdditionalImagess": [
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/12939_991_D_on-model-front.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/12939_995_OFF_Front.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/12939_991_OFF_Front.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/12939_561_OFF_Front.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/TM12939_927_B_102224125435.png"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/12939_358_OFF_Front.jpg"
+          ]
+        ],
+        "Description": "Anytime. Anywhere. That's the beauty of the Oracle. The waterproof and breathable fabric is critically seam-sealed and it has a snap-off hood to give you the protection you need in just about any weather. The lightweight, three-layer construction gives you all of the performance without the extra weight and breathable back vents keep you from overheating. Graphic camo pattern interior for extra style points and zippered pocket with an attached key hook. The zipper even doubles as a whistle to help you stay safe! FABRIC: OUTERSHELL: 100% Polyester mechanical stretch woven bonded to 100% Polyester graphic pattern knit with waterproof (8000mm), breathable (500g/m\u00b2) membrane and water repellent finish, 215 g/m\u00b2 (6.3 oz/yd\u00b2). LINING: 100% Polyester brushed tricot knit.",
+        "Fabric": "N/A",
+        "Regular_price": "$125.00"
+      },
+      {
+        "SKU": "92939",
+        "Name": "Women's ORACLE Softshell Jacket",
+        "Colors": [
+          "Black",
+          "Grey Storm",
+          "New Royal",
+          "Silver",
+          "Team Red"
+        ],
+        "Size": [
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ],
+        "Images": "https://www.trimarksportswear.com/trimarknew/product/large2/92939_991_D_on-model-front.jpg",
+        "AdditionalImagess": [
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/92939_991_D_on-model-front.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/92939_995_B_OFF_FRT.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/92939_991_B_FRONT_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/92939_561_B_OFF_FRT.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/TM92939_927_B_FR.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/92939_358_B_OFF_FRT.jpg"
+          ]
+        ],
+        "Description": "Anytime. Anywhere. That's the beauty of the Oracle. The waterproof and breathable fabric is critically seam-sealed and it has a snap-off hood to give you the protection you need in just about any weather. The lightweight, three-layer construction gives you all of the performance without the extra weight and breathable back vents keep you from overheating. Graphic camo pattern interior for extra style points and zippered pocket with an attached key hook. The zipper even doubles as a whistle to help you stay safe! FABRIC: OUTERSHELL: 100% Polyester mechanical stretch woven bonded to 100% Polyester graphic pattern knit with waterproof (8000mm), breathable (500g/m\u00b2) membrane and water repellent finish, 215 g/m\u00b2 (6.3 oz/yd\u00b2). LINING: 100% Polyester brushed tricot knit.",
+        "Fabric": "N/A",
+        "Regular_price": "$125.00"
+      },
+      {
+        "SKU": "19898",
+        "Name": "M-WHISTLER Light Down Vest",
+        "Colors": [
+          "Black",
+          "New Royal",
+          "Orange",
+          "Steel Grey",
+          "Team Red"
+        ],
+        "Size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ],
+        "Images": "https://www.trimarksportswear.com/trimarknew/product/large2/19898945_D_on-model-front-unifly-logo-2.jpg",
+        "AdditionalImagess": [
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/19898945_D_on-model-front-unifly-logo-2.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/19898_995_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/19898_561_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/19898_279_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/19898_945_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/19898_358_OFF.jpg"
+          ]
+        ],
+        "Description": "As stylish as the Whistler Jacket, the Light Down Whistler Vest features Thermaltech protection and is system ready. This new vest is light with 80% down and 20% feather fill, easy grip zipper pulls on outer pockets and available in five modern colours. The Whistler vest is versatile and great during the seasonal transition to cooler weather. Sport this vest during corporate events or team huddles outdoors, as it offers active people a versatile and stylish apparel solution. FABRIC: OUTER SHELL: 100% Nylon dull cire 380T woven, water repellent and downproof, 38 g/m\u00b2 (1.1 oz/yd\u00b2). LINING: 100% Nylon dull cire 380T. INSULATION: 80% Down 20% Feathers fill total of body, sleeves and collar, 125 g (3.7 oz) size L. DECORATION NOTICE: True Edge is unfortunately no longer available on this style.",
+        "Fabric": "N/A",
+        "Regular_price": "$207.40"
+      },
+      {
+        "SKU": "19899",
+        "Name": "(M) WHISTLER LIGHT DOWN JACKET",
+        "Colors": [
+          "Black",
+          "New Royal",
+          "Orange",
+          "Steel Grey",
+          "Team Red"
+        ],
+        "Size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL",
+          "4XL",
+          "5XL"
+        ],
+        "Images": "https://www.trimarksportswear.com/trimarknew/product/large2/19899_99701_561_550_093024125337.png",
+        "AdditionalImagess": [
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/19899_99701_561_550_093024125337.png"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/19899_995_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/19899_561_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/19899_279_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/19899_945_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/19899_358_OFF.jpg"
+          ]
+        ],
+        "Description": "High-tech minimalism can go a long way outdoors, especially when it looks this good. The Whistler Light Down Jacket features 100% nylon body construction, nylon/spandex knit binding and 80% down/20% feather fill. With its lightweight, compactability and multi-pocket design, this jacket offers active people a versatile and stylish apparel solution. Red Dot - Apparel Design Award FABRIC: 100% Nylon dull cire 380T woven, water repellent and downproof. 37 g/m2 (1.1 oz/yd2). LINING: 100% Nylon dull cire 380T. INSULATION: 80% Down / 20% Feathers fill total of body, sleeves and collar. 125 g/m2 (3.7/yd2). DECORATION NOTICE: True Edge is unfortunately no longer available on this style.",
+        "Fabric": "N/A",
+        "Regular_price": "$250.00"
+      },
+      {
+        "SKU": "16222",
+        "Name": "M-CRANDALL SS Polo",
+        "Colors": [
+          "Aspen Blue",
+          "Black",
+          "Forest Green",
+          "Heather Grey",
+          "Maroon",
+          "Navy",
+          "New Royal",
+          "Orange",
+          "Purple",
+          "Team Red",
+          "White"
+        ],
+        "Size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL",
+          "4XL",
+          "5XL"
+        ],
+        "Images": "https://www.trimarksportswear.com/trimarknew/product/large2/16222_575_ON.jpg",
+        "AdditionalImagess": [
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16222_575_ON.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16222_430_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16222_995_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16222_640_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16222_932_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16222_384_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16222_575_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16222_561_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16222_279_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16222_590_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16222_358_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16222_125_OFF.jpg"
+          ]
+        ],
+        "Description": "IMAGINEER CREATIONS The Crandall Short Sleeve Polo is a Polyester Cotton blend pique knit with a 3-button placket, dyed-to-match buttons, flat knit collar and sleeve cuffs and other well-constructed features. The updated fit features Caretech properties for an easy wash and wear with low shrinkage, fade resistant, commercial laundry wash (meets the standard of industrial laundering ISO 15797) and up to 5XL Size. Available in 11 trendy colours, this versatile polo is the perfect canvas for your branding. FABRIC: 65% Polyester 35% Cotton pique knit, 200 g/m\u00b2 (5.9 oz/yd\u00b2). CONTRAST: 65% Polyester 35% Cotton flat knit collar and sleeve cuffs. UV Protection: UPF 40+",
+        "Fabric": "N/A",
+        "Regular_price": "$35.00"
+      },
+      {
+        "SKU": "99899",
+        "Name": "(W) WHISTLER LIGHT DOWN JACKET",
+        "Colors": [
+          "Black",
+          "New Royal",
+          "Orange",
+          "Steel Grey",
+          "Team Red"
+        ],
+        "Size": [
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ],
+        "Images": "https://www.trimarksportswear.com/trimarknew/product/large2/99899945_B_093024152457.png",
+        "AdditionalImagess": [
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/99899945_B_093024152457.png"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/99899_995_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/99899_561_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/99899_279_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/99899_945_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/99899_358_OFF.jpg"
+          ]
+        ],
+        "Description": "High-tech minimalism can go a long way outdoors, especially when it looks this good. The Whistler Light Down Jacket features 100% nylon body construction, nylon/spandex knit binding and 80% down/20% feather fill. With its lightweight, compactability and multi-pocket design, this jacket offers active people a versatile and stylish apparel solution. Red Dot - Apparel Design Award FABRIC: 100% Nylon dull cire 380T woven, water repellent and downproof. 37 g/m2 (1.1 oz/yd2). LINING: 100% Nylon dull cire 380T. INSULATION: 80% Down / 20% Feathers fill total of body, sleeves and collar. 125 g/m2 (3.7/yd2). DECORATION NOTICE: True Edge is unfortunately no longer available on this style.",
+        "Fabric": "N/A",
+        "Regular_price": "$250.00"
+      },
+      {
+        "SKU": "14548",
+        "Name": "M-SHEFFORD Vest w/ Power BANK",
+        "Colors": [
+          "Black/Black"
+        ],
+        "Size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ],
+        "Images": "https://www.trimarksportswear.com/trimarknew/product/large2/14548_995_OFF.jpg",
+        "AdditionalImagess": [
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/14548_995_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/19548_995_B_FRONT_OFF.jpg"
+          ]
+        ],
+        "Description": "The Men's Shefford Heat Panel Vest with 6,000 mAh Power Bank delivers comfort and warmth like nothing else in our line. The Shefford features lightweight, water-repellent warmth while the power bank controls the temperature of the vest by powering interior heat panels at the chest and back. Three temperature settings controlled at the touch of a button: Blue = Low (100\u00b0F), White = Medium (113\u00b0F) and Red = High (131\u00b0F). This kit includes the 7121-62 Leed's UL Listed Cycle 6,000 mAh Power Bank. Power bank will provide heat for approximately 2.5 hours on High. Included power bank will be shipped blank. For a decorated option, power bank and vest must be purchased separately. Shefford Vest and Power Bank packaged separately. FABRIC: OUTERSHELL: 100% Nylon dull cire 380T woven, water repellent (600mm) and downproof, 38 g/m\u00b2 (1.1 oz/yd\u00b2). CONTRAST: 100% Polyester knit with DWR finish. INSULATION: 100% Polyester faux down fill, 164 g (5.8 oz) Men's sz L, 152 g (5.4 oz) Women's sz M. DECORATION NOTICE: Due to the interior heat panel wiring, the only decoration locations available on this garment are left chest, back yoke and back right/left shoulder.",
+        "Fabric": "N/A",
+        "Regular_price": "$350.00"
+      },
+      {
+        "SKU": "96222",
+        "Name": "W-CRANDALL SS Polo",
+        "Colors": [
+          "Aspen Blue",
+          "Black",
+          "Forest Green",
+          "Heather Grey",
+          "Maroon",
+          "Navy",
+          "New Royal",
+          "Orange",
+          "Purple",
+          "Team Red",
+          "White"
+        ],
+        "Size": [
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ],
+        "Images": "https://www.trimarksportswear.com/trimarknew/product/large2/96222384_D_on-model-front-bullydog-logo.jpg",
+        "AdditionalImagess": [
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96222384_D_on-model-front-bullydog-logo.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96222_430_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96222_995_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96222_640_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96222_932_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96222_384_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96222_575_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96222_561_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96222_279_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96222_590_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96222_358_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96222_125_OFF.jpg"
+          ]
+        ],
+        "Description": "IMAGINEER CREATIONS The Crandall Short Sleeve Polo is a Polyester Cotton blend pique knit with a 4-button placket, dyed-to-match buttons, flat knit collar and sleeve cuffs and other well-constructed features. . The updated fit features Caretech properties for an easy care wash and wear with low shrinkage, fade resistant and commercial laundry wash (meets the standard of industrial laundering ISO 15797). Available in 11 trendy colours, this versatile polo is the perfect canvas for your branding. FABRIC: 65% Polyester 35% Cotton pique knit, 200 g/m\u00b2 (5.9 oz/yd\u00b2). CONTRAST: 65% Polyester 35% Cotton flat knit collar and sleeve cuffs. UV Protection: UPF 40+",
+        "Fabric": "N/A",
+        "Regular_price": "N/A"
+      },
+      {
+        "SKU": "16308",
+        "Name": "(M) MACK SS Polo",
+        "Colors": [
+          "Black/Steel Grey",
+          "Olympic Blue/Steel Grey",
+          "Steel Grey/White",
+          "Team Red/Steel Grey"
+        ],
+        "Size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL",
+          "4XL",
+          "5XL"
+        ],
+        "Images": "https://www.trimarksportswear.com/trimarknew/product/large2/16308431_D_on-model-front-celer-logo.jpg",
+        "AdditionalImagess": [
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16308431_D_on-model-front-celer-logo.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16308_995_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16308_431_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16308_945_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16308_358_OFF.jpg"
+          ]
+        ],
+        "Description": "IMAGINEER CREATIONS The lightweight Mack Polo creates a bold colourblock look, pairing steel grey with black, red, blue or white. Along with the retail style the Mack offers exceptional technical features, including breathability, moisture wicking, snag resistance and UV protection. FABRIC: 100% Polyester textured knit with wicking finish, 155 g/m\u00b2 (4.6 oz/yd\u00b2). UV Protection: UPF 40+ DECORATION NOTICE: Laser available on grey area on colour 945 (Steel Grey/White).",
+        "Fabric": "100% Polyester textured knit with wicking finish, 155 g/m\u00b2 (4.6 oz/yd\u00b2).",
+        "Regular_price": "$23.75"
+      },
+      {
+        "SKU": "96308",
+        "Name": "(W) MACK SS Polo",
+        "Colors": [
+          "Black/Steel Grey",
+          "Olympic Blue/Steel Grey",
+          "Steel Grey/White",
+          "Team Red/Steel Grey"
+        ],
+        "Size": [
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ],
+        "Images": "https://www.trimarksportswear.com/trimarknew/product/large2/96308_945_B_on-model-front.jpg",
+        "AdditionalImagess": [
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96308_945_B_on-model-front.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96308_995_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96308_431_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96308_945_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96308_358_OFF.jpg"
+          ]
+        ],
+        "Description": "IMAGINEER CREATIONS The lightweight Mack Polo creates a bold colourblock look, pairing steel grey with black, red, blue or white. Along with the retail style the Mack offers exceptional technical features, including breathability, moisture wicking, snag resistance and UV protection. FABRIC: 100% Polyester textured knit with wicking finish, 155 g/m\u00b2 (4.6 oz/yd\u00b2). UV Protection: UPF 40+ DECORATION NOTICE: Laser available on grey area on colour 945 (Steel Grey/White).",
+        "Fabric": "100% Polyester textured knit with wicking finish, 155 g/m\u00b2 (4.6 oz/yd\u00b2).",
+        "Regular_price": "$23.75"
+      },
+      {
+        "SKU": "16255",
+        "Name": "M-MORI LS Polo",
+        "Colors": [
+          "Black",
+          "Forest Green",
+          "Navy",
+          "Olympic Blue",
+          "Steel Grey",
+          "Team Red",
+          "White"
+        ],
+        "Size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL",
+          "4XL",
+          "5XL"
+        ],
+        "Images": "https://www.trimarksportswear.com/trimarknew/product/large2/16255_945_B_on-model-front.jpg",
+        "AdditionalImagess": [
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16255_945_B_on-model-front.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16255_995_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16255_640_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16255_575_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16255_431_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16255_945_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16255_358_OFF.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16255_125_OFF.jpg"
+          ]
+        ],
+        "Description": "IMAGINEER CREATIONS The versatile Mori Polo is a classic long sleeve look that offers exceptional performance, with features like Webtech moisture management, UV protection, and fabric that's snag resistant. The men's version features a three-button placket, while the women's offers a more casual silhouette, with shaped seams, a dropped back hem and a tapered waist for a flattering fit. Tall size is available. Click here . FABRIC: 100% Polyester textured knit with wicking finish. 155 g/m\u00b2 (4.6 oz/yd\u00b2) CONTRAST: 100% Polyester flat knit collar. UV Protection: UPF 40+",
+        "Fabric": "N/A",
+        "Regular_price": "$42.40"
+      },
+      {
+        "SKU": "16512",
+        "Name": "Men's CERRADO SS Polo",
+        "Colors": [
+          "Apple/Grey Storm",
+          "Black/Grey Storm",
+          "Maroon/Grey Storm",
+          "New Royal/Grey Storm",
+          "Quarry/Grey Storm",
+          "White/Grey Storm"
+        ],
+        "Size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ],
+        "Images": "https://www.trimarksportswear.com/trimarknew/product/large2/16512_561_D_on-model-front.jpg",
+        "AdditionalImagess": [
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16512_561_D_on-model-front.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16512_653_B_OFF_FRT.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16512_995_B_OFF_FRT.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16512_384_B_OFF_FRT.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16512_561_B_OFF_FRT.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16512_938_B_OFF_FRT.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/16512_125_B_OFF_FRT.jpg"
+          ]
+        ],
+        "Description": "The not-so-basic styling and contrast details are huge difference makers with the Cerrado. Not to mention the super comfy, snag-resistant, moisture-wicking and breathable fabric with UPF 40+ protection (light colors UPF 15-24). This polo is designed to look good, no matter how often it's washed, which is great, because it?ll be worn a lot. FABRIC: 100% Polyester textured knit with wicking finish. 155 g/m\u00b2 (4.6 oz/yd\u00b2).",
+        "Fabric": "N/A",
+        "Regular_price": "$45.00"
+      },
+      {
+        "SKU": "96512",
+        "Name": "Women's CERRADO SS Polo",
+        "Colors": [
+          "Apple/Grey Storm",
+          "Black/Grey Storm",
+          "Maroon/Grey Storm",
+          "New Royal/Grey Storm",
+          "Quarry/Grey Storm",
+          "White/Grey Storm"
+        ],
+        "Size": [
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ],
+        "Images": "https://www.trimarksportswear.com/trimarknew/product/large2/96512_938_D_on-model-front.jpg",
+        "AdditionalImagess": [
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96512_938_D_on-model-front.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96512_653_B_OFF_Front.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96512_995_B_OFF_Front.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96512_384_B_OFF_Front.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96512_561_B_OFF_Front.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96512_938_B_OFF_FRT.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96512_125_B_OFF_Front.jpg"
+          ]
+        ],
+        "Description": "The not-so-basic styling and contrast details are huge difference makers with the Cerrado. Shaped seams, tapered waist, v-neck and dropped back hem give the women's style a great-looking silhouette. Not to mention the super comfy, snag-resistant, moisture-wicking and breathable fabric with UPF 40+ protection (light colors UPF 15-24). This polo is designed to look good, no matter how often it's washed, which is great, because it'll be worn a lot. FABRIC: 100% Polyester textured knit with wicking finish. 155 g/m\u00b2 (4.6 oz/yd\u00b2).",
+        "Fabric": "",
+        "Regular_price": "$45.00"
+      },
+      {
+        "SKU": "96512",
+        "Name": "Women's CERRADO SS Polo",
+        "Colors": [
+          "Apple/Grey Storm",
+          "Black/Grey Storm",
+          "Maroon/Grey Storm",
+          "New Royal/Grey Storm",
+          "Quarry/Grey Storm",
+          "White/Grey Storm"
+        ],
+        "Size": [
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ],
+        "Images": "https://www.trimarksportswear.com/trimarknew/product/large2/96512_938_D_on-model-front.jpg",
+        "AdditionalImagess": [
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96512_938_D_on-model-front.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96512_653_B_OFF_Front.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96512_995_B_OFF_Front.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96512_384_B_OFF_Front.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96512_561_B_OFF_Front.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96512_938_B_OFF_FRT.jpg"
+          ],
+          [
+            "https://www.trimarksportswear.com/trimarknew/product/large2/96512_125_B_OFF_Front.jpg"
+          ]
+        ],
+        "Description": "The not-so-basic styling and contrast details are huge difference makers with the Cerrado. Shaped seams, tapered waist, v-neck and dropped back hem give the women's style a great-looking silhouette. Not to mention the super comfy, snag-resistant, moisture-wicking and breathable fabric with UPF 40+ protection (light colors UPF 15-24). This polo is designed to look good, no matter how often it's washed, which is great, because it'll be worn a lot. FABRIC: 100% Polyester textured knit with wicking finish. 155 g/m\u00b2 (4.6 oz/yd\u00b2).",
+        "Fabric": "",
+        "Regular_price": "$45.00"
+      }
+    ]
