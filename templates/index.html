@@ -332,6 +332,7 @@ function toggleInput(checkboxId, inputGroupId) {
                             <div class="input-block">
                                 <div class="mb-2">
                                     <label for="other_category" class="form-label">Other Category:</label>
+                                     <input type="hidden" name="item_checks" value="{{ item.Category }}">
                                 </div>
                                 <input type="text" id="other_category" name="other_category" class="form-control"
                                     placeholder="Enter category if not present in the list">
