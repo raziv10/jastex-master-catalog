@@ -267,6 +267,7 @@ function toggleInput(checkboxId, inputGroupId) {
                             </div>
                             <div class="col-md-6"> <!-- Provides equal space for vendor and category on medium screens -->
                                 <p class="product-info category"><b>Vendor Category:</b> {{ item.Categories }}</p>
+                                  <input type="hidden" name="categories" value="{{ item.Categories }}">
                             </div>
                         </div>
                         <!-- Description and other details below -->
@@ -332,7 +333,7 @@ function toggleInput(checkboxId, inputGroupId) {
                             <div class="input-block">
                                 <div class="mb-2">
                                     <label for="other_category" class="form-label">Other Category:</label>
-                                     <input type="hidden" name="item_checks" value="{{ item.Category }}">
+                                    
                                 </div>
                                 <input type="text" id="other_category" name="other_category" class="form-control"
                                     placeholder="Enter category if not present in the list">
