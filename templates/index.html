@@ -248,7 +248,7 @@ function toggleInput(checkboxId, inputGroupId) {
                 {% for item in items %}
                 <div class="product-item">
                     <div class="image-container">
-                        <img src="{{ item.Images }}" alt="{{ item.Name }}" class="img-fluid">
+                        <img src="{{ item.Images[0] }}" alt="{{ item.Name }}" class="img-fluid">
                     </div>
                     <div class="text-container">
                         <!-- Top Row for SKU, Name, Vendor, Vendor Category -->
