@@ -74,13 +74,6 @@ def submit():
     # Include 'Other Category' if provided
     if other_category and other_category.strip():  # Ensure it's not empty or just whitespace
         categories.append(f"Other Category > {other_category.strip()}")
-    
-    # Fetch the 'item.Category' value
-    item_category = form_data.get("item_checks", "").strip()  # Ensure to fetch the value from the form correctly
-    
-    if item_category:  # Check if it's not empty
-        categories.append(item_category)
-
 
 
     # Build the JSON structure for this submission
