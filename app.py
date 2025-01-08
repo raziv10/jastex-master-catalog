@@ -67,22 +67,20 @@ def submit():
     # Extract Gender
     gender = next((item for item in selections if item.startswith("Gender")), None)
     
-    ## For Non Brands
-    # categories = [item for item in selections if " > " in item and not item.startswith("Gender")]
-    
-    
-    # # Fetch the 'item.Category' value from the form
-    # if other_category and other_category.strip():  # Ensure it's not empty or just whitespace
-    #     categories.append(f"Other Category > {other_category.strip()}")
+    # Extract Categories
+    categories = [item for item in selections if " > " in item and not item.startswith("Gender")]
 
-        # Fetch the submitted 'categories' and 'other_category'
-    categories = request.form.get('categories', '').strip()
-    other_category = request.form.get('other_category', '').strip()
 
-    # Process the categories
-    category_list = []
-    if other_category:
-        category_list.append(f"{categories} > {other_category}")
+    # Include 'Other Category' if provided
+    if other_category and other_category.strip():  # Ensure it's not empty or just whitespace
+        categories.append(f"Other Category > {other_category.strip()}")
+    
+    # Fetch the 'item.Category' value
+    item_category = form_data.get("item_checks", "").strip()  # Ensure to fetch the value from the form correctly
+    
+    if item_category:  # Check if it's not empty
+        categories.append(item_category)
+
 
 
     # Build the JSON structure for this submission
@@ -91,7 +89,7 @@ def submit():
         "Manual_name": product_name,
         "Gender": gender,
         "Price_change": price_other,
-        "Category": category_list
+        "Category": categories
     }
 
 
