@@ -62,7 +62,11 @@ def submit():
     print("Submitted Selections:", selections)
 
     # Extract SKU
+    # Extract SKU
     sku = next((item for item in selections if not item.startswith("Gender") and not " > " in item), None)
+
+    # Extract Supplier (if SKU is not found)
+    supplier = sku if not sku else next((item for item in selections if "supplier" in item.lower()), None)
 
     # Extract Gender
     gender = next((item for item in selections if item.startswith("Gender")), None)
@@ -70,15 +74,14 @@ def submit():
     # Extract Categories
     categories = [item for item in selections if " > " in item and not item.startswith("Gender")]
 
-
     # Include 'Other Category' if provided
     if other_category and other_category.strip():  # Ensure it's not empty or just whitespace
         categories.append(f"Other Category > {other_category.strip()}")
 
-
     # Build the JSON structure for this submission
     result = {
         "SKU": sku,
+        "Supplier": supplier,
         "Manual_name": product_name,
         "Gender": gender,
         "Price_change": price_other,
