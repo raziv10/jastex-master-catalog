@@ -256,6 +256,7 @@ function toggleInput(checkboxId, inputGroupId) {
                             <div class="col-sm-6"> <!-- Adjusted to take half width on all small to medium screens -->
                                 <p class="product-info sku"><b>SKU:</b> {{ item.SKU }}</p>
                                 <input type="hidden" name="item_checks" value="{{ item.SKU }}">
+                                 <input type="hidden" name="item_checks" value="{{ item.supplier }}">
                             </div>
                             <div class="col-sm-6"> <!-- Adjusted to take half width on all small to medium screens -->
                                 <p class="product-info name"><b>Name:</b> <span>{{ item.Name }}</span></p>
