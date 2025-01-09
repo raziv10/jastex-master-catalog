@@ -56,6 +56,7 @@ def submit():
     selections = request.form.getlist('item_checks')
     other_category = request.form.get('other_category')  # Retrieve the text entered in the "Other Category" field
     product_name = request.form.get('product_name') 
+    supplier = request.form.get("supplier_check")
     
     # Retrieving prices for each size
     price_other = request.form.get('price_other')
@@ -66,7 +67,8 @@ def submit():
     sku = next((item for item in selections if not item.startswith("Gender") and not " > " in item), None)
 
     # Extract Supplier (if SKU is not found)
-    supplier = sku if not sku else next((item for item in selections if "supplier" in item.lower()), None)
+    supplier = supplier or next((item for item in selections if "supplier" in item.lower()), None)
+
 
     # Extract Gender
     gender = next((item for item in selections if item.startswith("Gender")), None)
